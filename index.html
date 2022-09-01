@@ -16,6 +16,9 @@
     <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
     <!--google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Da+2:wght@600&family=Playball&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     <!--Animate.css--->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -36,13 +39,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
                         <li class="nav-item me-2">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item me-2">
                             <a class="nav-link text-white" aria-current="page" href="#what_do_we_do">What do we do</a>
                         </li>
                         <li class="nav-item me-2">
-                            <a class="nav-link text-white" aria-current="page" href="#our-team">Our Team</a>
+                            <a class="nav-link text-white" aria-current="page" href="./team.html">Our Team</a>
                         </li>
                         <li class="nav-item me-2">
                             <a class="nav-link text-white" aria-current="page" href="#footer">Connect with Us</a>
@@ -54,7 +57,8 @@
         <header id="animated_background">
         <div class="container-fluid animate__animated animate__zoomInDown">
             <div id="intro1" class="text-center">CodeChef MMMUT Chapter</div>
-            <div id="intro2" class="text-white text-center">Welcome to the biggest coding community of the university!!</div>
+            <div id="intro2" class="text-white text-center">Welcome to the Biggest Coding Community of the University!</div>
+            <button onclick="document.location='team.html'" id="btn" class="buttonstyle">Our Team</button>
             <div class="text-center d-flex justify-content-center">
                 <hr class="bg-white" style="width:40vh;">
             </div>
@@ -100,392 +104,7 @@
         </div>
     </section>
 
-    <section id="our-team" class="team"  style="background-color:#62cfcfc8;"">
-        <div data-aos="zoom-in-up" data-aos-duration="800" class="heading"><h1 class="head text-dark text-center pt-5">Our Team</h1></div>
-        <div class="text-center d-flex justify-content-center">
-            <hr class="bg-dark" style="width:40vh;">
-        </div>
-        <div class="container" id="team">
-            <div class="row justify-content-center" class="team-grp">
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Yash Tiwari</h4>
-                            <span>President</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Amit Bhardwaj</h4>
-                            <span>Vice President and CP Mentor</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Adarsh Kumar Srivastava</h4>
-                            <span>CP Lead</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Utkarsh Jaiswal</h4>
-                            <span>Designing and Outreach Lead</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Abhishek Mishra</h4>
-                            <span>Event Lead</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Vipul Jain</h4>
-                            <span>Vice CP Lead and CP Mentor</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Sai Arya</h4>
-                            <span>Vice CP Lead and CP Mentor</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Sophiya Singh</h4>
-                            <span>CP Lead(Girls)</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Akshat Agarwal</h4>
-                            <span>Problem Setting Lead</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Ashmit Mishra</h4>
-                            <span>Contest Lead</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Manish Agrahari</h4>
-                            <span>Team and Social Media Lead</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Priya Kumari</h4>
-                            <span>Team and Social Media Lead</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Anubhav Agrawal</h4>
-                            <span>CP Session Coordinator</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Sanskriti Singh</h4>
-                            <span>CP Session Coordinator</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Prachi Deshwal</h4>
-                            <span>DSA Lead</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Shivendra Tripathi</h4>
-                            <span>Editorial Lead</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-5" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="team-1">
-                        <div class="pic">
-                            <img src="img/Sample Image.png" class="img-fluid" alt="Profile" />
-                        </div>
-                        <div class="team-info">
-                            <h4>Pratik Yadav</h4>
-                            <span>Editorial Lead</span>
-                            <div class="social">
-                                <a href="mailto:" target="_blank">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
+    
 
     <footer id="footer">
         <div class="footer-top container">
@@ -496,7 +115,7 @@
                     <img src="img/logo.jpeg" alt="Codechef MMMUT Chapter LOGO" class="logo">
                     <img src="img/MMMUT LOGO.png" alt="MMMUT LOGO" class="logo">
                 </div>
-                <p>Codechef MMMUT Chapter is an outcome oriented coding community that aims to upskill all its members to make them have successful careers.Come join us in this thrilling and amazing journey.And let’s Transform India into Global Developer Powerhouse Together!</p>
+                <p>Codechef MMMUT Chapter is an outcome oriented coding community that aims to upskill all its members to make them have successful careers. Come join us in this thrilling and amazing journey.And let’s Transform India into Global Developer Powerhouse Together!</p>
           </div>
               <div class="col-lg-4 col-md-6 footer-links">
                 <h4>Our Events</h4>

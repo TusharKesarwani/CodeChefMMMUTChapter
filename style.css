@@ -60,7 +60,26 @@ a {
 	margin-top: 1vh;
 }
 
+#btn{
+	font-size: 25px;
+	border-radius: 16px;
+	display: block;
+	margin-left: 47%;
+	margin-top: 11px;
+	color: white;
+	padding: 5px;
+	font-family: 'Baloo Da 2', cursive;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
 
+#btn:hover{
+	background-color: #01290d;
+	transform: scale(1.1);
+    cursor: pointer;
+    background-color: #01290d;
+    border: 3px solid black;
+}
 .logo {
 	width: 50px;
 	height: 50px;
@@ -225,6 +244,29 @@ a {
 	width:100vw;
 	background-color: #62cfcfc8;
 	padding: 20px 0px 20px 0px;
+}
+@media screen and (max-width: 426px) {
+	#btn{
+	margin-left: 35%;
+	font-size: 25px;
+	border-radius: 16px;
+	display: block;
+	/* margin-left: 47%; */
+	margin-top: 11px;
+	color: white;
+	padding: 5px;
+	font-family: 'Baloo Da 2', cursive;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+	}
+	
+	/* #btn:hover{
+		background-color: #01290d;
+		transform: scale(1.1);
+		cursor: pointer;
+		background-color: #01290d;
+		border: 3px solid black;
+	} */
 }
 
 /* End of Footer */
