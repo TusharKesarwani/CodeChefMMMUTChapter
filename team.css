@@ -1,5 +1,9 @@
 /* Start of Our Team Section */
 
+.head{
+	padding-top: 10vh;
+}
+
 #our-team {
 	background-color: #1a1c1f;
 }
