@@ -1,6 +1,6 @@
 # CodeChefMMMUTChapter
 
-<h2 align=center>Contributors⭐</h2> 
+<h2 align=center>Developers⭐</h2> 
 <table align="center">
 <tr>
 <td>
