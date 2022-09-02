@@ -24,6 +24,13 @@
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.ico" type="image/png" />
 </head>
+<body id="root">
+    <style> 
+        #our-team{
+        margin:0;
+        }
+    </style>
+<body>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-custom position-absolute w-100 d-flexbox" style="z-index: 1000">
         <div class="container-fluid">
@@ -60,7 +67,7 @@
     </nav>
 
     <section id="our-team" class="team">
-        <div data-aos="zoom-in-up" data-aos-duration="800" class="heading"><h1 class="head text-dark text-center">Our Team</h1></div>
+        <div data-aos="zoom-in-up" data-aos-duration="800" class="heading"><h1 class="head text-center" style="color:black;">Our Team</h1></div>
         <div class="text-center d-flex justify-content-center">
             <hr class="bg-dark" style="width:40vh;">
         </div>
@@ -1240,6 +1247,26 @@
 	<script>
 		AOS.init();
 	</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    
+    <script>
+        VANTA.FOG({
+          el: "#our-team",
+          mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  highlightColor: 0xc0c0c0,
+  midtoneColor: 0xc8c0bf,
+  lowlightColor: 0xbdb8d7,
+  baseColor: 0x3b3d50,
+  blurFactor: 0.71,
+  speed: 2.00,
+  zoom: 0.80
+        })
+        </script>
 
 </body>
 </html>
