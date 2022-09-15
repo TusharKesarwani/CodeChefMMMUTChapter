@@ -23,7 +23,10 @@
     <link rel="icon" href="img/favicon.ico" type="image/png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
 </head>
-<body>
+<body onload="myfunction()">
+    <div id="load"></div>
+
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed w-100 d-flexbox" style="z-index: 1000">
         <div class="container-fluid">
             <div class="navbar-brand">
@@ -207,7 +210,12 @@
 	<script>
 		AOS.init();
 	</script>
-
+    <script>
+        var preloader = document.getElementById('load');
+        function myfunction(){
+            preloader.style.display='none';
+        }
+    </script>
 
 </body>
 </html>
