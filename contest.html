@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Main CSS-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/waves.css">
     <!-- Page Specific CSS -->
     <link rel="stylesheet" href="contest.css">
     <!--fontawesome-->
@@ -66,54 +67,95 @@
     <div class="mypanel" style="color: antiquewhite;"> We are Retrieving Data </div>
 
 
+    <!-- Footer  -->
+
+  <!--Waves Container-->
+  <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+  </div>
+  <!--Waves end-->
+
+  </div>
+  <!--Header ends-->
+
+  <!--Content starts-->
+  <div class="content flex">
     <footer id="footer">
-        <div class="footer-top container">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 footer-info">
-                <div class="logos">
-                    <a href="https://linktr.ee/codechefmmmutchapter" target="_blank"><img src="img/logo.png" alt="Codechef MMMUT Chapter LOGO" class="logo"></a>
-                    <a href="http://www.mmmut.ac.in/" target="_blank"><img src="img/MMMUT LOGO.png" class="logo" alt="MMMUT logo" /></a>
-                </div>
-                <p>Codechef MMMUT Chapter is an outcome oriented coding community that aims to upskill all its members to make them have successful careers.Come join us in this thrilling and amazing journey.And let’s Transform India into Global Developer Powerhouse Together!</p>
-          </div>
-              <div class="col-lg-4 col-md-6 footer-links">
-                <h4>Our Events</h4>
-                <hr class="bg-dark">
-                <ul>
-                  <li><i class="fa fa-angle-right"></i> <a href="img/coming_soon.png" class="text-dark">Coding Contests</a></li>
-                  <li><i class="fa fa-angle-right"></i> <a href="img/coming_soon.png" class="text-dark">Problem Solving Sessions</a></li>
-                  <li><i class="fa fa-angle-right"></i> <a href="img/coming_soon.png" class="text-dark">Training Sessions</a></li>
-                  <li><i class="fa fa-angle-right"></i> <a href="img/coming_soon.png" class="text-dark">Learning Sprints</a></li>
-                </ul>
+      <div class="footer-top container">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-info">
+              <div class="logos">
+                <a href="https://linktr.ee/codechefmmmutchapter" target="_blank"><img src="img/logo.png"
+                    alt="Codechef MMMUT Chapter LOGO" class="logo"></a>
+                <a href="http://www.mmmut.ac.in/" target="_blank"><img src="img/MMMUT LOGO.png" class="logo"
+                    alt="MMMUT logo" /></a>
               </div>
-              <div class="col-lg-4 col-md-6 footer-contact">
-                <h4>Contact Us</h4>
-                <hr class="bg-dark">
-                <p>
-                  MMMUT <br>
-                  Gorakhpur<br>
-                  U.P India <br>
-                </p>
-                <hr class="bg-dark">
-                <div class="text-center fs-2 m-2 social-icon">
-                    <a href="https://www.linkedin.com/company/codechef-mmmut-chapter/mycompany/?viewAsMember=true" target="_blank" class="mx-6 text-decoration-none handles"><i class="fa-brands fa-linkedin text-dark"></i></a>
-                    <a href="https://www.instagram.com/codechef.mmmut/" target="_blank" class="mx-6 text-decoration-none handles"><i class="fa-brands fa-instagram text-dark"></i></a>
-                    <a href="https://www.facebook.com/codechef.mmmut/" target="_blank" class="mx-6 text-decoration-none handles"><i class="fa-brands fa-facebook text-dark"></i></a>
-                    <a href="https://t.me/+09MFBpyvTPNmODdl" target="_blank" class="mx-6 text-decoration-none handles"><i class="fa-brands fa-telegram text-dark"></i></a>
-                    <a href="https://www.youtube.com/c/CodechefMMMUTChapter?sub_confirmation=1" target="_blank" class="mx-6 text-decoration-none handles"><i class="fa-brands fa-youtube text-dark"></i></a>
-                    <!-- <a href="#" target="_blank" class="mx-6 text-decoration-none handles"><i class="fa-brands fa-youtube"></i></a> -->
-                </div>
+              <p>Codechef MMMUT Chapter is an outcome oriented coding community that aims to upskill all its members to
+                make them have successful careers.Come join us in this thrilling and amazing journey.And let’s Transform
+                India into Global Developer Powerhouse Together!</p>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Our Events</h4>
+              <hr class="bg-dark">
+              <ul style="list-style: none;">
+                <li><i class="fa-solid fa-laptop-code"></i> <a href="img/coming_soon.png" class="text-dark">  Coding
+                    Contests</a></li>
+                <li><i class="fa-solid fa-laptop-code"></i> <a href="img/coming_soon.png" class="text-dark"> Problem Solving
+                    Sessions</a></li>
+                <li><i class="fa-solid fa-laptop-code"></i> <a href="img/coming_soon.png" class="text-dark"> Training
+                    Sessions</a></li>
+                <li><i class="fa-solid fa-laptop-code"></i><a href="img/coming_soon.png" class="text-dark"> Learning
+                    Sprints</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <hr class="bg-dark">
+              <p>
+                MMMUT <br>
+                Gorakhpur<br>
+                U.P India <br>
+              </p>
+              <hr class="bg-dark">
+              <div class="text-center fs-2 m-2 social-icon">
+                <a href="https://www.linkedin.com/company/codechef-mmmut-chapter/mycompany/?viewAsMember=true"
+                  target="_blank" class="mx-6 text-decoration-none handles"><i
+                    class="fa-brands fa-linkedin text-dark"></i></a>
+                <a href="https://www.instagram.com/codechef.mmmut/" target="_blank"
+                  class="mx-6 text-decoration-none handles"><i class="fa-brands fa-instagram text-dark"></i></a>
+                <a href="https://www.facebook.com/codechef.mmmut/" target="_blank"
+                  class="mx-6 text-decoration-none handles"><i class="fa-brands fa-facebook text-dark"></i></a>
+                <a href="https://t.me/+09MFBpyvTPNmODdl" target="_blank" class="mx-6 text-decoration-none handles"><i
+                    class="fa-brands fa-telegram text-dark"></i></a>
+                <a href="https://www.youtube.com/c/CodechefMMMUTChapter?sub_confirmation=1" target="_blank"
+                  class="mx-6 text-decoration-none handles"><i class="fa-brands fa-youtube text-dark"></i></a>
+                <!-- <a href="#" target="_blank" class="mx-6 text-decoration-none handles"><i class="fa-brands fa-youtube"></i></a> -->
               </div>
             </div>
           </div>
         </div>
-        <div class="copy">
-            <div class="text-center mt-2">&copy; Copyright <a href="https://linktr.ee/codechefmmmutchapter" target="_blank" class="text-decoration-none"><strong class="text-dark">Codechef MMMUT Chapter</strong></a>. All rights reserved.</div>
-            <div class="text-center mb-2">Designed with <i class="fa-solid fa-heart"></i> by <a href="https://linktr.ee/tushar_104/" target="_blank" class="text-decoration-none"><strong class="text-dark">Tushar Kesarwani</strong></a></div>
-        </div>
+      </div>
+      <div class="copy">
+        <div class="text-center mt-2">&copy; Copyright <a href="https://linktr.ee/codechefmmmutchapter" target="_blank"
+            class="text-decoration-none"><strong class="text-dark">Codechef MMMUT Chapter</strong></a>. All rights
+          reserved.</div>
+        <div class="text-center mb-2">Designed with <i class="fa-solid fa-heart"></i> by <a
+            href="https://linktr.ee/tushar_104/" target="_blank" class="text-decoration-none"><strong
+              class="text-dark">Tushar Kesarwani</strong></a></div>
+      </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="script.js"></script>

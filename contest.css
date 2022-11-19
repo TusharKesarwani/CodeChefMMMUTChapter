@@ -52,7 +52,7 @@ table{
 
   /* visited link */
   a:visited {
-    color: whitesmoke !important;
+    color: black !important;
     text-decoration: none;
   }
   /* upcoming contests ended */
