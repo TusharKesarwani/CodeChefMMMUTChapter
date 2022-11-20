@@ -1,58 +1,262 @@
-#root{
-    padding-top: 10vh;
+#root {
+  /* padding-top: 5vh; */
+  background-color: #1F2739;
+  background-color: #62cfcfc8;
+
+
+}
+
+
+*{
+  /* overflow-x: hidden; */
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.head {
+  z-index: 999;
+  position: relative;
+  top: 90px;
+  text-align: center;
+  width: 100%;
+  font-size: xx-large;
+  font-weight: bold;
+  justify-content: center;
+  /* margin: 10px; */
+}
+
+.mypanel {
+  margin-top: 340px;
+  background-color: #1F2739;
+  background-color: #62cfcfc8;
+
+}
+.work{
+  background-color: #1F2739;
+  background-color: #62cfcfc8;
+
+}
+
+.blue {
+  color: #185875;
+}
+
+.yellow {
+  color: #FFF842;
 }
 
 /* Upcoming contest starts */
 th, td {
-    text-align: center;
-    color: whitesmoke;
-    width: max-content;
-    padding: 1px 
-  }  
-
-tr{
-  border: 2px solid white;
-  padding: 5px;
-}  
-  
-th{
-  font-size: large;
-  background-color:#473e3e;
-  width: 30px;
-}  
-
-body {
-    background-color: rgba(53 48 101 / 85%) !important;
-    color: blanchedalmond;
-          min-width:350px;
-  
+  text-align: center;
+  /* color: whitesmoke; */
+  width: max-content;
+  padding: 1px
 }
 
-table{
+
+tr {
+  border: 2px solid #1F2739;
+}
+
+th {
+  font-size: large;
+  width: 30px;
+}
+
+body {
+  min-width: 350px;
+}
+
+table {
   width: 100%;
   text-align: center;
 }
 
-  a:link {
-    color: whitesmoke;
-    text-decoration: none !important;
-  }
+/* All link css  */
 
-  a:hover{
-    color: whitesmoke !important;
-  }
+td a::after {
+  color: blue;
+}
 
-  img{
-    background-color: white;
-  }
+td a:link {
+  color: red !important;
+  text-decoration: none !important;
+}
 
-  tr:hover {
-    background-color:#473e3e;
-  }
+td a:hover {
+  color: black !important;
+}
 
-  /* visited link */
-  a:visited {
-    color: whitesmoke !important;
-    text-decoration: none;
+a:visited {
+  color: red;
+}
+
+th span {
+  color: red;
+}
+
+img {
+  background-color: white;
+}
+
+/* Container */
+thead, table {
+  text-align: center;
+  color: white;
+  width: max-content;
+  padding: 1px;
+}
+
+thead:hover, td:hover, tr:hover {
+  color: white !important;
+}
+
+th h1 {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  color: #185875;
+}
+
+td {
+  font-weight: normal;
+  font-size: 1em;
+  color: white;
+  border: 2px solid transparent;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+  -moz-box-shadow: 0 2px 2px -2px #0E1119;
+  box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+table {
+  text-align: left;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+td, th {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+/* Background-color of the odd rows */
+tr:nth-child(odd) {
+  background-color: #323C50 !important;
+}
+
+/* Background-color of the even rows */
+tr:nth-child(even) {
+  background-color: #2C3446 !important;
+}
+
+th {
+  background-color: #1F2739;
+}
+
+td:first-child {
+  color: #FB667A;
+}
+
+tr:hover {
+  background-color: #464A52;
+  -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+  -moz-box-shadow: 0 6px 6px -6px #0E1119;
+  box-shadow: 0 6px 6px -6px #0E1119;
+  color: black !important;
+}
+
+td:hover {
+  background-color: #FFF842;
+  color: black !important;
+  font-weight: bold;
+
+  /* box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px; */
+  /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transform: translate3d(6px, -6px, 0);
+
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-timing-function: line;
+}
+
+tr td a:hover {
+  color: black !important;
+}
+
+
+@media (max-width: 800px) {
+
+  td:nth-child(4),
+  th:nth-child(4) {
+    display: none;
   }
-  /* upcoming contests ended */
+}
+
+
+/* CSS of date and time section  */
+
+
+/* css of date and time  */
+#todaydet {
+  display: flex;
+  width: 120%;
+  overflow: hidden;
+  flex-direction: column;
+  /* background-color:#1C1C1C; */
+  text-align: center;
+  font-family: helvetica;
+  position: absolute;
+  top: 158px;
+  position: absolute;
+  right: 0px;
+}
+
+#date {
+  font-family: 'Pattaya', sans-serif;
+  font-family: 'Viaoda Libre', cursive;
+  margin-top: 0px;
+  color: black;
+  font-size: 2.5rem;
+  display: flex;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 120%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#time {
+  font-family: 'Pattaya', sans-serif;
+  font-family: 'Viaoda Libre', cursive;
+  margin-top: 20px;
+  display: flex;
+  overflow: hidden;
+  font-size: 2.5rem;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 120%;
+  background: rgba(255, 255, 255, 0.5);
+  /* margin-left:150px; */
+}
+
+@media (max-width:800px){
+    #todaydet{
+      position: relative;
+      width: 100%;
+      justify-content: center;
+      /* border: 2px solid red; */
+      overflow: hidden;
+    }
+}

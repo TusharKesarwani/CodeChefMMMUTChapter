@@ -2,7 +2,7 @@ fetch('https://kontests.net/api/v1/all')
 .then(res => res.json())
 .then ((data) => 
 {
-var text = "<table><tr><th></th><th>Upcoming Contests</th><th>Date and Time</th></tr>";    
+var text = "<table> <thead><tr><th>CONTEST <span>SITE</span></th><th>UPCOMING <span>CONTESTS</span></th><th>DATE & <span>TIME</span></th></tr></thead>";    
 for(var info in data)
 {
     if(data[info].status == "BEFORE" && data[info].site!="Toph" )
@@ -12,13 +12,13 @@ for(var info in data)
         var time=date.toString();
         text += `
         <tr>
-        <td>
-          <img src="assets/${data[info].site}.png" class="img-fluid rounded rounded-circle" alt="Kick Start" width="60px">
-        </td>
-        <td>
-        <a href=\" ${data[info].url} \"> ${data[info].name} </a> <br>
-        </td>
-        <td> ${date} </td>
+          <td>
+            <img src="assets/${data[info].site}.png" class="img-fluid rounded" alt="Contest" width="60px" margin="20px">
+          </td>
+          <td>
+          <a href=\" ${data[info].url} \" class="link"> ${data[info].name} </a>
+          </td>
+          <td> ${date} </td>
         </tr>
         `
     }
