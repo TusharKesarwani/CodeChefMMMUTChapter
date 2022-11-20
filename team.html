@@ -67,6 +67,10 @@
         </div>
     </nav>
 
+    <button class="btn-to-top">
+        <i class="fa fa-arrow-up fa-2x"></i>
+    </button>
+
     <section id="our-team" class="team">
         <div data-aos="zoom-in-up" data-aos-duration="800" class="heading">
             <h1 class="head text-center" style="color:black;">Our Team</h1>
@@ -1310,12 +1314,26 @@
     <script>
         AOS.init();
     </script>
-    <script>    
+    <script>
         var preloader = document.getElementById('load');
         function myfunction() {
-          preloader.style.display = 'none';
+            preloader.style.display = 'none';
         }
-      </script>
+    </script>
+
+    <!-- btn-to-top script start -->
+    <script>
+        const btn = document.querySelector('.btn-to-top');
+        btn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+        })
+    </script>
+    <!-- btn-to-top script ends-->
+
 </body>
 
 </html>

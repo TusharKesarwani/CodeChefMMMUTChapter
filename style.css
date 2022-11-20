@@ -189,3 +189,16 @@ a {
 }
 
 /* End of Footer */
+
+.btn-to-top {
+  z-index: 999;
+  text-align: center;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  height: 50px;
+  width: 48px;
+  border-radius: 14px;
+  background-color: #35dada;
+  border: none;
+}
