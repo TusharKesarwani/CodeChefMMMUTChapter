@@ -1,13 +1,10 @@
 #root {
   /* padding-top: 5vh; */
-  background-color: #1F2739;
+  background-color: #1f2739;
   background-color: #62cfcfc8;
-
-
 }
 
-
-*{
+* {
   /* overflow-x: hidden; */
   padding: 0px;
   margin: 0px;
@@ -28,14 +25,12 @@
 
 .mypanel {
   margin-top: 340px;
-  background-color: #1F2739;
+  background-color: #1f2739;
   background-color: #62cfcfc8;
-
 }
-.work{
-  background-color: #1F2739;
+.work {
+  background-color: #1f2739;
   background-color: #62cfcfc8;
-
 }
 
 .blue {
@@ -43,20 +38,20 @@
 }
 
 .yellow {
-  color: #FFF842;
+  color: #fff842;
 }
 
 /* Upcoming contest starts */
-th, td {
+th,
+td {
   text-align: center;
   /* color: whitesmoke; */
   width: max-content;
-  padding: 1px
+  padding: 1px;
 }
 
-
 tr {
-  border: 2px solid #1F2739;
+  border: 2px solid #1f2739;
 }
 
 th {
@@ -101,14 +96,17 @@ img {
 }
 
 /* Container */
-thead, table {
+thead,
+table {
   text-align: center;
   color: white;
   width: max-content;
   padding: 1px;
 }
 
-thead:hover, td:hover, tr:hover {
+thead:hover,
+td:hover,
+tr:hover {
   color: white !important;
 }
 
@@ -124,9 +122,9 @@ td {
   font-size: 1em;
   color: white;
   border: 2px solid transparent;
-  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
-  -moz-box-shadow: 0 2px 2px -2px #0E1119;
-  box-shadow: 0 2px 2px -2px #0E1119;
+  -webkit-box-shadow: 0 2px 2px -2px #0e1119;
+  -moz-box-shadow: 0 2px 2px -2px #0e1119;
+  box-shadow: 0 2px 2px -2px #0e1119;
 }
 
 table {
@@ -138,7 +136,8 @@ table {
   padding: 0 0 8em 0;
 }
 
-td, th {
+td,
+th {
   padding-bottom: 2%;
   padding-top: 2%;
   padding-left: 2%;
@@ -146,38 +145,39 @@ td, th {
 
 /* Background-color of the odd rows */
 tr:nth-child(odd) {
-  background-color: #323C50 !important;
+  background-color: #323c50 !important;
 }
 
 /* Background-color of the even rows */
 tr:nth-child(even) {
-  background-color: #2C3446 !important;
+  background-color: #2c3446 !important;
 }
 
 th {
-  background-color: #1F2739;
+  background-color: #1f2739;
 }
 
 td:first-child {
-  color: #FB667A;
+  color: #fb667a;
 }
 
 tr:hover {
-  background-color: #464A52;
-  -webkit-box-shadow: 0 6px 6px -6px #0E1119;
-  -moz-box-shadow: 0 6px 6px -6px #0E1119;
-  box-shadow: 0 6px 6px -6px #0E1119;
+  background-color: #464a52;
+  -webkit-box-shadow: 0 6px 6px -6px #0e1119;
+  -moz-box-shadow: 0 6px 6px -6px #0e1119;
+  box-shadow: 0 6px 6px -6px #0e1119;
   color: black !important;
 }
 
 td:hover {
-  background-color: #FFF842;
+  background-color: #fff842;
   color: black !important;
   font-weight: bold;
 
   /* box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px; */
   /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   transform: translate3d(6px, -6px, 0);
 
   transition-delay: 0s;
@@ -190,18 +190,14 @@ tr td a:hover {
   color: black !important;
 }
 
-
 @media (max-width: 800px) {
-
   td:nth-child(4),
   th:nth-child(4) {
     display: none;
   }
 }
 
-
 /* CSS of date and time section  */
-
 
 /* css of date and time  */
 #todaydet {
@@ -219,8 +215,8 @@ tr td a:hover {
 }
 
 #date {
-  font-family: 'Pattaya', sans-serif;
-  font-family: 'Viaoda Libre', cursive;
+  font-family: "Pattaya", sans-serif;
+  font-family: "Viaoda Libre", cursive;
   margin-top: 0px;
   color: black;
   font-size: 2.5rem;
@@ -235,8 +231,8 @@ tr td a:hover {
 }
 
 #time {
-  font-family: 'Pattaya', sans-serif;
-  font-family: 'Viaoda Libre', cursive;
+  font-family: "Pattaya", sans-serif;
+  font-family: "Viaoda Libre", cursive;
   margin-top: 20px;
   display: flex;
   overflow: hidden;
@@ -251,12 +247,12 @@ tr td a:hover {
   /* margin-left:150px; */
 }
 
-@media (max-width:800px){
-    #todaydet{
-      position: relative;
-      width: 100%;
-      justify-content: center;
-      /* border: 2px solid red; */
-      overflow: hidden;
-    }
+@media (max-width: 800px) {
+  #todaydet {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    /* border: 2px solid red; */
+    overflow: hidden;
+  }
 }

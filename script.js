@@ -3,12 +3,12 @@ VANTA.NET({
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  points: 14.00,
-  maxDistance: 22.00,
-  spacing: 16.00,
-  showDots: false
-})
+  minHeight: 200.0,
+  minWidth: 200.0,
+  scale: 1.0,
+  scaleMobile: 1.0,
+  points: 14.0,
+  maxDistance: 22.0,
+  spacing: 16.0,
+  showDots: false,
+});
