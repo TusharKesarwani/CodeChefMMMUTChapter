@@ -1,5 +1,5 @@
-.contact-us {
-
+* {
+  overflow-x: hidden ;
 }
 
 .page {
@@ -14,7 +14,20 @@
   border-style:inset;
   box-shadow: 5px 10px 18px #c9f74ca1;
 }
-
+@media (max-width: 991px) {
+  .page {
+    margin:10%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #154e3a91;
+    border-color:rgba(0, 0, 0, 0);
+    border-radius: 2px;
+    border-style:inset;
+    box-shadow: 5px 10px 18px #c9f74ca1;
+  }
+}
 
 /* Animation */
 
