@@ -1,59 +1,59 @@
 @media (min-width: 1200px) {
   .page {
-    margin:10%;
+    margin: 10%;
     margin-left: 28%;
     margin-right: 28%;
     padding-top: 1px;
     padding-bottom: 1px;
     background-color: #154e3a91;
-    border-color:rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
     border-radius: 2px;
-    border-style:inset;
+    border-style: inset;
     box-shadow: 5px 10px 18px #c9f74ca1;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .page {
-    margin:10%;
+    margin: 10%;
     margin-left: 4%;
     margin-right: 4%;
     padding-top: 1px;
     padding-bottom: 1px;
     background-color: #154e3a91;
-    border-color:rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
     border-radius: 2px;
-    border-style:inset;
+    border-style: inset;
     box-shadow: 5px 10px 18px #c9f74ca1;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .page {
-    margin:10%;
+    margin: 10%;
     margin-left: 4%;
     margin-right: 4%;
     padding-top: 1px;
     padding-bottom: 1px;
     background-color: #154e3a91;
-    border-color:rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
     border-radius: 2px;
-    border-style:inset;
+    border-style: inset;
     box-shadow: 5px 10px 18px #c9f74ca1;
   }
 }
 
 @media (max-width: 768px) {
   .page {
-    margin-top:10%;
+    margin-top: 10%;
     padding-left: 4%;
     padding-right: 4%;
     padding-top: 1px;
     padding-bottom: 1px;
     background-color: #154e3a91;
-    border-color:rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
     border-radius: 2px;
-    border-style:inset;
+    border-style: inset;
     box-shadow: 5px 10px 18px #c9f74ca1;
   }
 }

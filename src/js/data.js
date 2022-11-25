@@ -11,7 +11,7 @@ fetch("https://kontests.net/api/v1/all")
         text += `
         <tr>
           <td>
-            <img src="assets/${data[info].site}.png" class="img-fluid rounded" alt="Contest" width="60px" margin="20px">
+            <img src="../../assets/${data[info].site}.png" class="img-fluid rounded" alt="Contest" width="60px" margin="20px">
           </td>
           <td>
           <a href=\" ${data[info].url} \" class="link"> ${data[info].name} </a>

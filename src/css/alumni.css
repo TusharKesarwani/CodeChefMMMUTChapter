@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Start of Our Team Section */
+
+.head {
+  padding-top: 20vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#our-team {
+  z-index: 1;
+}
+
+.team-grp {
+  display: flexbox;
+  justify-content: center;
+}
+
+.team .team-1 {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.team .team-1 .pic {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.team .team-1 img {
+  transition: all ease-in-out 0.4s;
+}
+
+.team .team-1:hover img {
+  transform: scale(1.1);
+}
+
+.team .team-1 .team-info {
+  position: absolute;
+  bottom: -48px;
+  left: 20px;
+  right: 20px;
+  background: #0d1a1ac5;
+  padding: 15px 0;
+  border-radius: 4px;
+}
+
+.team .team-1 h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.team .team-1 h4:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #1d3501;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.team .team-1 span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+.team .team-1 .social {
+  margin-top: 15px;
+}
+
+.team .team-1 .social a {
+  transition: color 0.3s;
+  color: #01290d;
+}
+
+.team .team-1 .social a:hover {
+  color: #fff;
+}
+
+.team .team-1 .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.team-info {
+  border-radius: 4px;
+  box-shadow: 2px 3px 12px #c9f74ca1;
+}
+
+.team-1 {
+  border-radius: 4px;
+  box-shadow: 2px 0px 18px #000000f3;
+}
+
+.fab,
+.fa-envelope {
+  color: rgb(255, 255, 255);
+}
+/* End of our team section */
+
+#particles-js {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0d2f23;
+  z-index: -1;
+}
+
+#back {
+  position: static;
+}
+
+#footer {
+  z-index: 999;
+}
