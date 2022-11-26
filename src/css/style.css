@@ -14,6 +14,20 @@
   z-index: 9999999;
 }
 
+#bg-video {
+    min-width: 100%;
+    min-height: 154vh;
+    top: 100vh;
+    max-width: 100%;
+    right: 0%;
+    max-height: 41vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#bg-video::-webkit-media-controls {
+  display: none !important;
+}
 body {
   overflow-x: hidden;
 }
@@ -38,19 +52,33 @@ a {
   width: 100vw;
   z-index: 0;
 }
-
+#con1{
+  position: relative;
+  top: 1vh;
+}
+#con2{
+  position: relative;
+  top: 4vh;
+}
+#con3{
+  position: relative;
+  top: 7vh;
+}
+#con4{
+  position: relative;
+  top: 10vh;
+}
 #intro1 {
   font-size: 40px;
   font-weight: bold;
   padding-top: 40vh;
   background: linear-gradient(
     90deg,
-    purple,
+    rgb(79, 79, 240),
     #fff,
-    #ff00f3,
-    #0033ff,
-    #ff00c4,
-    purple
+    rgb(79, 79, 240),
+    white,
+    rgb(79, 79, 240)
   );
   background-size: 400%;
   letter-spacing: 2px;
@@ -107,6 +135,13 @@ a {
   text-decoration: none;
 }
 
+/* video animation */
+#bg-video{
+  position: absolute;
+  /* right: 0;
+  bottom: 0; */
+  z-index: -1;
+}
 .card-hover:hover {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -186,6 +221,45 @@ a {
   }
 }
 
+@media (max-width: 425px){
+  #bg-video {
+    min-width: 14%;
+    min-height: 441vh;
+    top: 100vh;
+    max-width: 100%;
+    right: 0%;
+    max-height: 41vh;
+    object-fit: cover;
+}
+#con1{
+  position: relative;
+  top: 1vh;
+}
+#con2{
+  position: relative;
+  top: 2vh;
+}
+#con3{
+  position: relative;
+  top: 2vh;
+}
+#con4{
+  position: relative;
+  top: 2vh;
+}
+}
+
+@media (max-width: 320px){
+  #bg-video {
+    min-width: 14%;
+    min-height: 550vh;
+    top: 100vh;
+    max-width: 100%;
+    right: 0%;
+    max-height: 41vh;
+    object-fit: cover;
+}
+}
 /* End of Footer */
 
 .btn-to-top {
