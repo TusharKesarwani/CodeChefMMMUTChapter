@@ -134,7 +134,7 @@ a {
 
 
 .btn-to-top {
-  z-index: 999;
+  z-index: 1000;
   text-align: center;
   position: fixed;
   right: 10px;
