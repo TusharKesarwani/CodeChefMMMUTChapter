@@ -4,6 +4,8 @@ font & reset css
 --------------------------------------------- 
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Figtree:100,300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,500,700,900");
 /* 
 ---------------------------------------------
 reset
@@ -33,6 +35,10 @@ body {
   z-index: 9999999;
 }
 
+.navbar {
+  box-shadow: 0 2px 4px #00000026;
+}
+
 .logo {
   width: 50px;
   height: 50px;
@@ -45,29 +51,47 @@ a {
   text-decoration: none;
 }
 
+a > span {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+a.active{
+  background-color: #ECEFF6;
+  border-radius: 5px;
+  display: grid;
+  align-items: center;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
 
 /* Start of Header */
 
-#background-header {
-  margin-top: 75px;
-}
-
 .header-body {
   background-image: linear-gradient(to bottom right, #00b4c6, #0088e8);
+  /* background-image: url(../../img/bg-front.jpg); */
   padding-bottom: 50px;
+  margin: 30px;
+  margin-top: 105px;
 }
 
-#header-text, #mission-text, #opportunity-text {
+#header-text, #mission-text {
   display: grid;
   align-items: center;
 }
 
-#intro, #mission-content, #opportunity-content {
+#intro {
   padding-top: 60px;
   font-family: "Roboto Slab", serif;
+}
+
+#intro1 {
+  font-family: Figtree;
+  font-weight:500;
 }
 
 #intro2 {
@@ -79,19 +103,48 @@ a {
   height: auto;
 }
 
-#mission-logo {
+#mission-logo, #opportunity-logo {
   width: 80%;
   height: auto;
 }
 
-#opportunity-logo {
-  width: 80%;
-  height: auto;
+.mission-body {
+  background-color: #F6F8FB !important;
+  border-top: none !important;
+  box-shadow: 0 -2px 4px #00000026 !important;
 }
 
-.mission-body, .opportunity-body {
-  padding-top: 100px;
-  padding-bottom: 100px;
+#mission-content, #opportunity-content {
+  font-family: "Open Sans" , sans-serif;
+}
+
+#mission-title, #opportunity-title {
+  font-weight:500;
+  color:#4A4A4A; 
+  /* padding-bottom:10px; */
+}
+
+#mission-point, #opportunity-point {
+  padding-left: 2%;
+  font-family: "Open Sans";
+  font-weight: 500;
+}
+
+@media (min-width: 1013px) {
+  #mission-point, #opportunity-point {
+    padding-left: 10px;
+  }
+}
+
+#mission-point > div, #opportunity-point > div {
+  padding:10px;
+}
+
+
+.opportunity-icon, .mission-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
 }
 
 /* End of Header */
