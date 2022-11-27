@@ -29,7 +29,7 @@ body {
   height: 100vh;
   width: 100%;
   position: fixed;
-  background: #fff url(/img/Loading_icon.gif) no-repeat center;
+  background: #FFFCF4 url(/img/Loading_icon.gif) no-repeat center;
   z-index: 9999999;
 }
 
