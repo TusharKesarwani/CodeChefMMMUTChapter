@@ -117,45 +117,55 @@ a.active{
 
 .opportunity-body {
   border-top: none !important;
+  border-bottom: none !important;
 }
 
 #mission-content, #opportunity-content {
   font-family: "Open Sans" , sans-serif;
 }
 
-#mission-title, #opportunity-title {
+#mission-title, #opportunity-title, #advisor-title {
   font-weight:500;
   color:#4A4A4A;
 }
 
-#mission-point, #opportunity-point {
+#mission-point, #opportunity-point, #advisor-point {
   padding-left: 2%;
   font-family: "Open Sans";
   font-weight: 500;
 }
 
 @media (min-width: 1013px) {
-  #mission-point, #opportunity-point {
+  #mission-point, #opportunity-point, #advisor-point {
     padding-left: 10px;
   }
   #mission-title, #opportunity-title {
     font-size: 60px;
   }
-}
-
-@media (max-width: 1012px) {
-  #mission-title, #opportunity-title {
+  #advisor-title {
+    font-size: 60px;
+  }
+  #advisor-name {
     font-size: 40px;
   }
 }
 
-@media (max-width: 800px) {
-  #mission-title, #opportunity-title {
+@media (max-width: 1012px) {
+  #mission-title, #opportunity-title, #advisor-title {
+    font-size: 40px;
+  }
+  #advisor-name {
     font-size: 30px;
   }
 }
 
-#mission-point > div, #opportunity-point > div {
+@media (max-width: 800px) {
+  #mission-title, #opportunity-title, #advisor-title {
+    font-size: 30px;
+  }
+}
+
+#mission-point > div, #opportunity-point > div, #advisor-point > div {
   padding:10px;
 }
 
@@ -168,7 +178,26 @@ a.active{
 
 /* End of Header */
 
+#advisor {
+  padding: 30px;
+  background-color: #FFFCF4;
+}
 
+.advisor-body {
+  border-color: #E1EFFF !important;
+  border-width: 2px !important;
+}
+
+#advisor-logo {
+  margin: 20px;
+  width: 60%;
+  height: auto;
+  border: #DCE9FF 4px solid;
+}
+
+#advisor-title {
+  color: #263773 !important;
+}
 /* Start of Go Top button */
 
 .go-top {
@@ -211,69 +240,127 @@ a.active{
 
 /* End of Go Top button */
 
-/* Start of Footer */
+/* Start of FAQ */
 
-.logo-footer {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
+#faq {
+	background-color: #ffffff;
 }
 
-.logo-footer2 {
-  height: 500px;
+#faq .accordion dl:after,
+#faq .accordion-list:after {
+	content: "";
+	display: block;
+	width: 100%;
+}
+
+#faq .accordion dd,
+#faq .accordion__panel {
+	background-color: #eee;
+	font-size: 1em;
+	line-height: 1.5em;
+  --bg-opacity: 1;
+	background-color: rgba(226,232,240,var(--bg-opacity));
+}
+
+#faq .accordion p {
+	padding: 0em 2em 1em 2em;
+}
+
+#faq .accordion {
+	position: relative;
+	background-color: #ffffff;
+}
+
+#faq .container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 2em 0 2em 0;
+}
+
+#faq .accordionTitle,
+#faq .accordion__Heading {
+	background-color: #EDF2F7;
+	text-align: center;
+	font-weight: 700;
+	padding: 1.8em;
+	display: block;
+	text-decoration: none;
+	color:black;
+	transition: background-color 0.5s ease-in-out;
+}
+#faq .accordionTitle:before,
+#faq .accordion__Heading:before {
+	content: "+";
+	font-size: 1.5em;
+	line-height: 0.5em;
+	float: left;
+	transition: transform 0.3s ease-in-out;
+}
+#faq .accordionTitle:hover,
+#faq .accordion__Heading:hover {
+  --bg-opacity: 1;
+	background-color: rgba(226,232,240,var(--bg-opacity));
+}
+
+#faq .accordionTitleActive,
+#faq .accordionTitle.is-expanded {
+  --bg-opacity: 1;
+	background-color: rgba(226,232,240,var(--bg-opacity));
+}
+#faq .accordionTitleActive:before,
+#faq .accordionTitle.is-expanded:before {
+	transform: rotate(-225deg);
+}
+
+#faq .accordionItem {
+	height: auto;
+	overflow: hidden;
+	transition: max-height 1s;
+}
+
+@media screen and (min-width: 48em) {
+	#faq .accordionItem {
+		transition: max-height 0.5s;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#faq .accordion {
+		width: 95vw;
+		margin: 0 auto;
+	}
+}
+
+#faq .accordionItem.is-collapsed {
+	max-height: 0;
+}
+
+#faq .no-js .accordionItem.is-collapsed {
+	max-height: auto;
+}
+
+#faq .animateIn {
+	-webkit-animation: accordionIn 0.45s normal ease-in-out both 1;
+	animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+#faq .animateOut {
+	-webkit-animation: accordionOut 0.45s alternate ease-in-out both 1;
+	animation: accordionOut 0.45s alternate ease-in-out both 1;
 }
 
 #footer {
-  position: relative;
-  min-height: 15vh;
-  width: 100%;
-  background-color: white;
-  color: rgb(10, 9, 9);
-  font-size: 90%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 0px 0px 0px;
-}
-
-.logos {
-  margin: 10px 0px 20px 0px;
+  background-color: #F4EEE9;
 }
 
 .social-icon {
-  font-size: 280%;
+  font-size: 150%;
 }
 
-.copy {
-  width: 100%;
-  position: absolute;
-  top: 350px;
-  background-color: #62cfcfc8;
-  padding: 20px 0px 20px 0px;
-}
-
-@media (max-width: 1013px) {
-  .copy {
-    top: 500px;
-  }
-}
-
-@media (max-width: 769px) {
-  .copy {
-    top: 700px;
-  }
-}
-
-@media (max-width: 317px) {
-  .copy {
-    top: 800px;
-  }
-}
-@media (max-width: 264px) {
-  .copy {
-    position: relative;
-    top: 0px;
-  }
+.center {
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 /* End of Footer */
