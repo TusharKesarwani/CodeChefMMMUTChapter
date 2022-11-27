@@ -111,7 +111,12 @@ a.active{
 .mission-body {
   background-color: #F6F8FB !important;
   border-top: none !important;
+  border-bottom: none !important;
   box-shadow: 0 -2px 4px #00000026 !important;
+}
+
+.opportunity-body {
+  border-top: none !important;
 }
 
 #mission-content, #opportunity-content {
@@ -120,8 +125,7 @@ a.active{
 
 #mission-title, #opportunity-title {
   font-weight:500;
-  color:#4A4A4A; 
-  /* padding-bottom:10px; */
+  color:#4A4A4A;
 }
 
 #mission-point, #opportunity-point {
@@ -133,6 +137,21 @@ a.active{
 @media (min-width: 1013px) {
   #mission-point, #opportunity-point {
     padding-left: 10px;
+  }
+  #mission-title, #opportunity-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1012px) {
+  #mission-title, #opportunity-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  #mission-title, #opportunity-title {
+    font-size: 30px;
   }
 }
 
@@ -148,6 +167,7 @@ a.active{
 }
 
 /* End of Header */
+
 
 /* Start of Go Top button */
 
@@ -190,24 +210,6 @@ a.active{
 }
 
 /* End of Go Top button */
-
-/* Start of Card Section */
-
-.card-hover:hover {
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgb(235, 46, 109) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.contest-link {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 110%;
-  margin: 0px;
-  padding: 0px;
-}
-
-/* End of Card Section */
 
 /* Start of Footer */
 
