@@ -10,24 +10,18 @@ reset
 --------------------------------------------- 
 */
 
-
 * {
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 html,
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  /* background-color: #fff; */
   font-size: 16px;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
@@ -40,12 +34,15 @@ body {
 }
 
 .logo {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  border-radius: 50%;
   background-color: transparent;
 }
 
 a {
   text-decoration: none;
-  /* color: white; */
 }
 
 ::-webkit-scrollbar {
@@ -54,53 +51,47 @@ a {
 
 /* Start of Header */
 
-#animated_background {
-  height: 100vh;
-  width: 100vw;
-  z-index: 0;
+#background-header {
+  margin-top: 75px;
 }
 
-#intro1 {
-  font-size: 40px;
-  font-weight: bold;
-  padding-top: 40vh;
-  background: linear-gradient(
-    90deg,
-    purple,
-    #fff,
-    #ff00f3,
-    #0033ff,
-    #ff00c4,
-    purple
-  );
-  background-size: 400%;
-  letter-spacing: 2px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  animation: animate 15s linear infinite;
+.header-body {
+  background-image: linear-gradient(to bottom right, #00b4c6, #0088e8);
+  padding-bottom: 50px;
 }
 
-@keyframes animate {
-  0% {
-    background-position: 0%;
-  }
+#header-text, #mission-text, #opportunity-text {
+  display: grid;
+  align-items: center;
+}
 
-  100% {
-    background-position: 400%;
-  }
+#intro, #mission-content, #opportunity-content {
+  padding-top: 60px;
+  font-family: "Roboto Slab", serif;
 }
 
 #intro2 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 1vh;
+  font-size: 25px;
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
-  margin: 0 5px;
-  border-radius: 50%;
+#header-logo {
+  width: 60%;
+  height: auto;
+}
+
+#mission-logo {
+  width: 80%;
+  height: auto;
+}
+
+#opportunity-logo {
+  width: 80%;
+  height: auto;
+}
+
+.mission-body, .opportunity-body {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* End of Header */
@@ -132,7 +123,6 @@ a {
   text-decoration: none;
 }
 
-
 .btn-to-top {
   z-index: 1000;
   text-align: center;
@@ -145,7 +135,6 @@ a {
   background-color: #35dada;
   border: none;
 }
-
 
 /* End of Go Top button */
 

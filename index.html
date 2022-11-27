@@ -30,8 +30,9 @@
 <body onload="myfunction()">
   <div id="load"></div>
 
+  <!-- Start of nav bar -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed w-100 d-flexbox" style="z-index: 1000">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white position-fixed w-100 d-flexbox" style="z-index: 1000">
     <div class="container-fluid">
       <div class="navbar-brand">
         <a href="https://codechef-mmmut-chapter.netlify.app/"><img src="img/logo.png" class="logo"
@@ -70,110 +71,67 @@
       </div>
     </div>
   </nav>
-  <header id="animated_background">
-    <div class="container-fluid animate__animated animate__zoomInDown">
-      <div id="intro1" class="text-center"><span class="display-4">CodeChef MMMUT Chapter</span></div>
-      <div id="intro2" class="text-white text-center">Welcome to the biggest coding community of the university!!</div>
-      <div class="text-center d-flex justify-content-center">
-        <hr class="bg-white" style="width:40vh;">
-      </div>
-    </div>
-  </header>
+
+  <!-- End of nav bar -->
 
   <a href="#" id="go-top" class="go-top">
     <i class="fa fa-arrow-up fa-fw"></i>
   </a>
 
-  <section class="text-center pt-5" style="background-color:#DFE4E7;" id="what_do_we_do">
-    <div data-aos="fade-right" data-aos-duration="800" class="heading">
-      <h1 class="">What do we do</h1>
+
+  <!-- Start of Header -->
+
+  <header id="background-header">
+    <div class="card header-body">
+      <div class="row" id="intro" data-aos="fade-right" data-aos-duration="800">
+        <div class="col-md-6" id="header-text">
+          <div class="card-body text-center">
+            <h5 class="card-title display-4" id="intro1">CodeChef MMMUT Chapter</h5>
+            <p class="card-text" id="intro2">Welcome to the biggest coding community of the university!!</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-center" id="header-image">
+          <img src="img/logo.png" class="rounded-start" id="header-logo" alt="logo">
+        </div>
+      </div>
     </div>
-    <div class="text-center d-flex justify-content-center">
-      <hr class="bg-dark" style="width:40vh;">
-    </div>
-    <div class="card-group p-5">
-      <div class="card m-2">
-        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
-          <h5 class="card-title font-weight-bold pt-2 mb-4">Coding Contests</h5>
-          <p class="card-text pb-5">We organize coding contests every year for new upcoming batch students. Through
-            these contests students check their coding skills and problem solving skills. We also provide goodies to the
-            winners of the contests.</p>
+  </header>
+
+  <!-- End of Header -->
+
+  <section id="mission">
+    <div class="card mission-body">
+      <div class="row" id="mission-content" data-aos="fade-left" data-aos-duration="800">
+        <div class="col-md-6 text-center">
+          <img src="img/about-us.png" class="rounded-start" id="mission-logo" alt="logo">
         </div>
-      </div>
-      <div class="card m-2">
-        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
-          <h5 class="card-title font-weight-bold pt-2 mb-4">Problem Solving Sessions</h5>
-          <p class="card-text pb-5">Problem Solving Sessions is for those students who wants to upskill thier problem
-            solving skills. In this session we all connecting with each other at one platform and targeting some good
-            DSA questions.</p>
-        </div>
-      </div>
-      <div class="card m-2">
-        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
-          <h5 class="card-title font-weight-bold pt-2 mb-4">Training Sessions</h5>
-          <p class="card-text pb-5">Training Sessions is for those students who are new in the coding field and don't
-            even know what is meant by programming languages.</p>
-        </div>
-      </div>
-      <div class="card m-2">
-        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
-          <h5 class="card-title font-weight-bold pt-2 mb-4">Learning Sprints</h5>
-          <p class="card-text pb-5">Learning Sprints is for those students who want to make command in the programming
-            languages like Java, C, C++ and Python.</p>
+        <div class="col-md-6" id="mission-text">
+          <div class="card-body text-center">
+            <h5 class="card-title display-4">Our Mission</h5>
+            <p class="card-text">The mission of this chapter is to build a robust Competitive Programming
+              culture on campuses and to help students become better problem solvers fostering learning and professional
+              development. We want to build a community of coders who are willing to help each other.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="text-center pt-5" style="background-color:#62cfcfc8;" id="past_events">
-    <div data-aos="fade-right" data-aos-duration="800" class="heading">
-      <h1 class="">Past Events</h1>
-    </div>
-    <div class="text-center d-flex justify-content-center">
-      <hr class="bg-dark" style="width:40vh;">
-    </div>
-    <div class="card-group p-5">
-      <div class="card m-2">
-        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
-          <h5 class="card-title font-weight-bold pt-2 mb-4">POP20 PUSH21</h5>
-          <p class="card-text pb-5">POP20 PUSH21 was an online coding contest conducted to build a robust Competitive
-            Programming culture on campus and to help students become better problem solvers, fostering learning and
-            professional development.
-          </p>
-          <a href="https://www.codechef.com/POPU2021">
-            <h4 class="text-dark contest-link">Contest Link</h4>
-          </a>
+  <section id="opportunities">
+    <div class="card opportunity-body pt-5">
+      <div class="row" id="opportunity-content" data-aos="fade-right" data-aos-duration="800">
+        <div class="col-md-6 pt-5" id="opportunity-text">
+          <div class="card-body text-center">
+            <h5 class="card-title display-4">Opportunities Chapter provide students with</h5>
+            <p class="card-text">
+            <p class="">Events, meetups, and speaker sessions on campus to raise awareness</p>
+            <p class="">Hosting various contests and competitions to facilitate learning</p>
+            <p class="">Conducting programming workshops and doubt-sessions for better learning</p>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card m-2">
-        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
-          <h5 class="card-title font-weight-bold pt-2 mb-4">Rang de Code</h5>
-          <p class="card-text pb-5">'Rang de Code' was a short coding contest hosted on Codechef to celebrate different
-            colors of data structures and algorithms on the eve of the festival of Colors.</p>
-          <a href="https://www.codechef.com/RDEC2021?itm_campaign=contest_listing">
-            <h4 class="text-dark contest-link">Contest Link</h4>
-          </a>
-        </div>
-      </div>
-      <div class="card m-2">
-        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
-          <h5 class="card-title font-weight-bold pt-2 mb-4">Code Anthem</h5>
-          <p class="card-text pb-5">Code Anthem 1.0 was an online coding contest hosted on CodeChef to build a
-            Competitive Programming culture on campus and to improve skills of students.
-          </p>
-          <a href="https://www.codechef.com/CANT2021">
-            <h4 class="text-dark contest-link">Contest Link</h4>
-          </a>
-        </div>
-      </div>
-      <div class="card m-2">
-        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
-          <h5 class="card-title font-weight-bold pt-2 mb-4">CODEWARS</h5>
-          <p class="card-text pb-5">CodeWars was an online coding contest conducted on 15th December 2021 on CodeChef to
-            build skills of coders.</p>
-          <a href="https://www.codechef.com/MMCW2021">
-            <h4 class="text-dark contest-link">Contest Link</h4>
-          </a>
+        <div class="col-md-6 text-center">
+          <img src="img/opportunity.png" class="rounded-start" id="opportunity-logo" alt="logo">
         </div>
       </div>
     </div>
@@ -182,7 +140,7 @@
   <!-- Footer  -->
 
   <!--Waves Container-->
-  <div>
+  <!-- <div>
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
       <defs>
@@ -195,10 +153,10 @@
         <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
       </g>
     </svg>
-  </div>
+  </div> -->
   <!--Waves end-->
 
-  </div>
+  <!-- </div> -->
   <!--Header ends-->
 
   <!--Content starts-->
