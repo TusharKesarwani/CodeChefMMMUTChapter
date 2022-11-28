@@ -4,6 +4,7 @@ font & reset css
 --------------------------------------------- 
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
 /* 
 ---------------------------------------------
 reset
@@ -35,7 +36,7 @@ body {
   height: 100vh;
   width: 100%;
   position: fixed;
-  background: #fff url(/img/Loading_icon.gif) no-repeat center;
+  background: #FFFCF4 url(/img/Loading_icon.gif) no-repeat center;
   z-index: 9999999;
 }
 
@@ -61,17 +62,17 @@ a {
 }
 
 #intro1 {
+  font-family: 'Roboto slab', serif;
   font-size: 40px;
   font-weight: bold;
   padding-top: 40vh;
   background: linear-gradient(
     90deg,
-    purple,
+    rgb(79, 79, 240),
     #fff,
-    #ff00f3,
-    #0033ff,
-    #ff00c4,
-    purple
+    rgb(79, 79, 240),
+    white,
+    rgb(79, 79, 240)
   );
   background-size: 400%;
   letter-spacing: 2px;
