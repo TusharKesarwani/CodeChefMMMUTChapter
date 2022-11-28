@@ -226,7 +226,7 @@ a.active{
 }
 
 .btn-to-top {
-  z-index: 1000;
+  z-index: 999;
   text-align: center;
   position: fixed;
   right: 10px;
