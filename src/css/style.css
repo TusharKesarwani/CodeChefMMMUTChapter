@@ -4,26 +4,30 @@ font & reset css
 --------------------------------------------- 
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
-@import url("https://fonts.googleapis.com/css?family=Figtree:100,300,400,500,700,900");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,500,700,900");
 /* 
 ---------------------------------------------
 reset
 --------------------------------------------- 
 */
 
+
 * {
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 html,
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  /* background-color: #fff; */
   font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
@@ -31,38 +35,17 @@ body {
   height: 100vh;
   width: 100%;
   position: fixed;
-  background: #FFFCF4 url(/img/Loading_icon.gif) no-repeat center;
+  background: #fff url(/img/Loading_icon.gif) no-repeat center;
   z-index: 9999999;
 }
 
-.navbar {
-  box-shadow: 0 2px 4px #00000026;
-}
-
 .logo {
-  width: 50px;
-  height: 50px;
-  margin: 0 5px;
-  border-radius: 50%;
   background-color: transparent;
 }
 
 a {
   text-decoration: none;
-}
-
-a > span {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-a.active{
-  background-color: #ECEFF6;
-  border-radius: 5px;
-  display: grid;
-  align-items: center;
+  /* color: white; */
 }
 
 ::-webkit-scrollbar {
@@ -71,133 +54,57 @@ a.active{
 
 /* Start of Header */
 
-.header-body {
-  background-image: linear-gradient(to bottom right, #00b4c6, #0088e8);
-  /* background-image: url(../../img/bg-front.jpg); */
-  padding-bottom: 50px;
-  margin: 30px;
-  margin-top: 105px;
-}
-
-#header-text, #mission-text {
-  display: grid;
-  align-items: center;
-}
-
-#intro {
-  padding-top: 60px;
-  font-family: "Roboto Slab", serif;
+#animated_background {
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
 }
 
 #intro1 {
-  font-family: Figtree;
-  font-weight:500;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 40vh;
+  background: linear-gradient(
+    90deg,
+    purple,
+    #fff,
+    #ff00f3,
+    #0033ff,
+    #ff00c4,
+    purple
+  );
+  background-size: 400%;
+  letter-spacing: 2px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
 }
 
 #intro2 {
-  font-size: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 1vh;
 }
 
-#header-logo {
-  width: 60%;
-  height: auto;
-}
-
-#mission-logo, #opportunity-logo {
-  width: 80%;
-  height: auto;
-}
-
-.mission-body {
-  background-color: #F6F8FB !important;
-  border-top: none !important;
-  border-bottom: none !important;
-  box-shadow: 0 -2px 4px #00000026 !important;
-}
-
-.opportunity-body {
-  border-top: none !important;
-  border-bottom: none !important;
-}
-
-#mission-content, #opportunity-content {
-  font-family: "Open Sans" , sans-serif;
-}
-
-#mission-title, #opportunity-title, #advisor-title {
-  font-weight:500;
-  color:#4A4A4A;
-}
-
-#mission-point, #opportunity-point, #advisor-point {
-  padding-left: 2%;
-  font-family: "Open Sans";
-  font-weight: 500;
-}
-
-@media (min-width: 1013px) {
-  #mission-point, #opportunity-point, #advisor-point {
-    padding-left: 10px;
-  }
-  #mission-title, #opportunity-title {
-    font-size: 60px;
-  }
-  #advisor-title {
-    font-size: 60px;
-  }
-  #advisor-name {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 1012px) {
-  #mission-title, #opportunity-title, #advisor-title {
-    font-size: 40px;
-  }
-  #advisor-name {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 800px) {
-  #mission-title, #opportunity-title, #advisor-title {
-    font-size: 30px;
-  }
-}
-
-#mission-point > div, #opportunity-point > div, #advisor-point > div {
-  padding:10px;
-}
-
-
-.opportunity-icon, .mission-icon {
-  height: 30px;
-  width: 30px;
-  margin-right: 10px;
+.logo {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  border-radius: 50%;
 }
 
 /* End of Header */
 
-#advisor {
-  padding: 30px;
-  background-color: #FFFCF4;
-}
-
-.advisor-body {
-  border-color: #E1EFFF !important;
-  border-width: 2px !important;
-}
-
-#advisor-logo {
-  margin: 20px;
-  width: 60%;
-  height: auto;
-  border: #DCE9FF 4px solid;
-}
-
-#advisor-title {
-  color: #263773 !important;
-}
 /* Start of Go Top button */
 
 .go-top {
@@ -225,8 +132,9 @@ a.active{
   text-decoration: none;
 }
 
+
 .btn-to-top {
-  z-index: 999;
+  z-index: 1000;
   text-align: center;
   position: fixed;
   right: 10px;
@@ -238,129 +146,90 @@ a.active{
   border: none;
 }
 
+
 /* End of Go Top button */
 
-/* Start of FAQ */
+/* Start of Card Section */
 
-#faq {
-	background-color: #ffffff;
-}
-
-#faq .accordion dl:after,
-#faq .accordion-list:after {
-	content: "";
-	display: block;
-	width: 100%;
+.card-hover:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgb(235, 46, 109) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-#faq .accordion dd,
-#faq .accordion__panel {
-	background-color: #eee;
-	font-size: 1em;
-	line-height: 1.5em;
-  --bg-opacity: 1;
-	background-color: rgba(226,232,240,var(--bg-opacity));
+.contest-link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 110%;
+  margin: 0px;
+  padding: 0px;
 }
 
-#faq .accordion p {
-	padding: 0em 2em 1em 2em;
+/* End of Card Section */
+
+/* Start of Footer */
+
+.logo-footer {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
 }
 
-#faq .accordion {
-	position: relative;
-	background-color: #ffffff;
-}
-
-#faq .container {
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 2em 0 2em 0;
-}
-
-#faq .accordionTitle,
-#faq .accordion__Heading {
-	background-color: #EDF2F7;
-	text-align: center;
-	font-weight: 700;
-	padding: 1.8em;
-	display: block;
-	text-decoration: none;
-	color:black;
-	transition: background-color 0.5s ease-in-out;
-}
-#faq .accordionTitle:before,
-#faq .accordion__Heading:before {
-	content: "+";
-	font-size: 1.5em;
-	line-height: 0.5em;
-	float: left;
-	transition: transform 0.3s ease-in-out;
-}
-#faq .accordionTitle:hover,
-#faq .accordion__Heading:hover {
-  --bg-opacity: 1;
-	background-color: rgba(226,232,240,var(--bg-opacity));
-}
-
-#faq .accordionTitleActive,
-#faq .accordionTitle.is-expanded {
-  --bg-opacity: 1;
-	background-color: rgba(226,232,240,var(--bg-opacity));
-}
-#faq .accordionTitleActive:before,
-#faq .accordionTitle.is-expanded:before {
-	transform: rotate(-225deg);
-}
-
-#faq .accordionItem {
-	height: auto;
-	overflow: hidden;
-	transition: max-height 1s;
-}
-
-@media screen and (min-width: 48em) {
-	#faq .accordionItem {
-		transition: max-height 0.5s;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	#faq .accordion {
-		width: 95vw;
-		margin: 0 auto;
-	}
-}
-
-#faq .accordionItem.is-collapsed {
-	max-height: 0;
-}
-
-#faq .no-js .accordionItem.is-collapsed {
-	max-height: auto;
-}
-
-#faq .animateIn {
-	-webkit-animation: accordionIn 0.45s normal ease-in-out both 1;
-	animation: accordionIn 0.45s normal ease-in-out both 1;
-}
-
-#faq .animateOut {
-	-webkit-animation: accordionOut 0.45s alternate ease-in-out both 1;
-	animation: accordionOut 0.45s alternate ease-in-out both 1;
+.logo-footer2 {
+  height: 500px;
 }
 
 #footer {
-  background-color: #F4EEE9;
+  position: relative;
+  min-height: 15vh;
+  width: 100%;
+  background-color: white;
+  color: rgb(10, 9, 9);
+  font-size: 90%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px 0px 0px;
+}
+
+.logos {
+  margin: 10px 0px 20px 0px;
 }
 
 .social-icon {
-  font-size: 150%;
+  font-size: 280%;
 }
 
-.center {
-  display: grid;
-  align-items: center;
-  justify-content: center;
+.copy {
+  width: 100%;
+  position: absolute;
+  top: 350px;
+  background-color: #62cfcfc8;
+  padding: 20px 0px 20px 0px;
+}
+
+@media (max-width: 1013px) {
+  .copy {
+    top: 500px;
+  }
+}
+
+@media (max-width: 769px) {
+  .copy {
+    top: 700px;
+  }
+}
+
+@media (max-width: 317px) {
+  .copy {
+    top: 800px;
+  }
+}
+@media (max-width: 264px) {
+  .copy {
+    position: relative;
+    top: 0px;
+  }
 }
 
 /* End of Footer */

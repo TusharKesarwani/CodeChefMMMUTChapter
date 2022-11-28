@@ -30,9 +30,8 @@
 <body onload="myfunction()">
   <div id="load"></div>
 
-  <!-- Start of nav bar -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white position-fixed w-100 d-flexbox" style="z-index: 1000">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed w-100 d-flexbox" style="z-index: 1000">
     <div class="container-fluid">
       <div class="navbar-brand">
         <a href="https://codechef-mmmut-chapter.netlify.app/"><img src="img/logo.png" class="logo"
@@ -47,7 +46,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
           <li class="nav-item me-2">
-            <a class="nav-link active" aria-current="page" href="#"><span>Home</span></a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" aria-current="page" href="#what_do_we_do">What do we do</a>
           </li>
           <li class="nav-item me-2">
             <a class="nav-link" aria-current="page" href="src/html/team.html">Our Team</a>
@@ -56,7 +58,10 @@
             <a class="nav-link" aria-current="page" href="src/html/contest.html">Upcoming Contests</a>
           </li>
           <li class="nav-item me-2">
-            <a class="nav-link" aria-current="page" href="src/html/alumni.html">Alumni</a>
+            <a class="nav-link" aria-current="page" href="#past_events">Past Events</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" aria-current="page" href="src/html/alumni.html">Our Alumni</a>
           </li>
           <li class="nav-item me-2">
             <a class="nav-link" aria-current="page" href="src/html/contact.html">Contact Us</a>
@@ -65,211 +70,209 @@
       </div>
     </div>
   </nav>
-
-  <!-- End of nav bar -->
+  <header id="animated_background">
+    <div class="container-fluid animate__animated animate__zoomInDown">
+      <div id="intro1" class="text-center"><span class="display-4">CodeChef MMMUT Chapter</span></div>
+      <div id="intro2" class="text-white text-center">Welcome to the biggest coding community of the university!!</div>
+      <div class="text-center d-flex justify-content-center">
+        <hr class="bg-white" style="width:40vh;">
+      </div>
+    </div>
+  </header>
 
   <a href="#" id="go-top" class="go-top">
     <i class="fa fa-arrow-up fa-fw"></i>
   </a>
 
-
-  <!-- Start of Header -->
-  <div class="welcome">
-    <header id="background-header">
-      <div class="card header-body">
-        <div class="row" id="intro" data-aos="fade-right" data-aos-duration="800">
-          <div class="col-md-6" id="header-text">
-            <div class="card-body text-center">
-              <h5 class="card-title display-4" id="intro1">CodeChef MMMUT Chapter</h5>
-              <p class="card-text" id="intro2">Welcome to the official site of CodeChef MMMUT Chapter. Get ready to
-                become a better coder and learn from the best. There's definitely something for you here...</p>
-            </div>
-          </div>
-          <div class="col-md-6 text-center" id="header-image">
-            <img src="img/logo.png" class="rounded-start" id="header-logo" alt="logo">
-          </div>
+  <section class="text-center pt-5" style="background-color:#DFE4E7;" id="what_do_we_do">
+    <div data-aos="fade-right" data-aos-duration="800" class="heading">
+      <h1 class="">What do we do</h1>
+    </div>
+    <div class="text-center d-flex justify-content-center">
+      <hr class="bg-dark" style="width:40vh;">
+    </div>
+    <div class="card-group p-5">
+      <div class="card m-2">
+        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
+          <h5 class="card-title font-weight-bold pt-2 mb-4">Coding Contests</h5>
+          <p class="card-text pb-5">We organize coding contests every year for new upcoming batch students. Through
+            these contests students check their coding skills and problem solving skills. We also provide goodies to the
+            winners of the contests.</p>
         </div>
       </div>
-    </header>
-  </div>
-
-  <!-- End of Header -->
-
-  <section id="mission">
-    <div class="card mission-body">
-      <div class="row" id="mission-content" data-aos="fade-left" data-aos-duration="800">
-        <div class="col-md-6 text-center">
-          <img src="img/about-us.png" class="rounded-start" id="mission-logo" alt="logo">
+      <div class="card m-2">
+        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
+          <h5 class="card-title font-weight-bold pt-2 mb-4">Problem Solving Sessions</h5>
+          <p class="card-text pb-5">Problem Solving Sessions is for those students who wants to upskill thier problem
+            solving skills. In this session we all connecting with each other at one platform and targeting some good
+            DSA questions.</p>
         </div>
-        <div class="col-md-6" id="mission-text">
-          <div class="card-body">
-            <h5 class="card-title text-center" id="mission-title">Our Mission</h5>
-            <hr style="margin-left:100px;margin-right:100px; background-color:#4A4A4A;">
-            <div class="card-text" id="mission-point">
-              <div class="d-flex">
-                <div><img src="img/mission-1.png" class="rounded-start mission-icon" alt="icon"></div>
-                <div>To build a robust Competitive Programming culture on campus.</div>
-              </div>
-              <div class="d-flex">
-                <div><img src="img/mission-1.png" class="rounded-start mission-icon" alt="icon"></div>
-                <div>To help students become better problem solvers fostering learning and professional development.
-                </div>
-              </div>
-              <div class="d-flex">
-                <div><img src="img/mission-1.png" class="rounded-start mission-icon" alt="icon"></div>
-                <div>To build a community of coders who are willing to help each other.</div>
-              </div>
-            </div>
-          </div>
+      </div>
+      <div class="card m-2">
+        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
+          <h5 class="card-title font-weight-bold pt-2 mb-4">Training Sessions</h5>
+          <p class="card-text pb-5">Training Sessions is for those students who are new in the coding field and don't
+            even know what is meant by programming languages.</p>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
+          <h5 class="card-title font-weight-bold pt-2 mb-4">Learning Sprints</h5>
+          <p class="card-text pb-5">Learning Sprints is for those students who want to make command in the programming
+            languages like Java, C, C++ and Python.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="opportunities">
-    <div class="card opportunity-body pt-5">
-      <div class="row" id="opportunity-content" data-aos="fade-right" data-aos-duration="800">
-        <div class="col-md-6 pt-5" id="opportunity-text">
-          <div class="card-body">
-            <h5 class="card-title text-center" id="opportunity-title">Opportunities</h5>
-            <hr style="margin-left:100px;margin-right:100px; background-color:#4A4A4A;">
-            <div class="card-text" id="opportunity-point">
-              <div class="d-flex">
-                <div><img src="img/opportunity-1.png" class="rounded-start opportunity-icon" alt="icon"></div>
-                <div>Events, meetups, and speaker sessions on campus to raise awareness.</div>
-              </div>
-              <div class="d-flex">
-                <div><img src="img/opportunity-1.png" class="rounded-start opportunity-icon" alt="icon"></div>
-                <div>Hosting various contests and competitions to facilitate learning.</div>
-              </div>
-              <div class="d-flex">
-                <div><img src="img/opportunity-1.png" class="rounded-start opportunity-icon" alt="icon"></div>
-                <div>Conducting programming workshops and doubt-sessions for better learning.</div>
-              </div>
-            </div>
-          </div>
+  <section class="text-center pt-5" style="background-color:#62cfcfc8;" id="past_events">
+    <div data-aos="fade-right" data-aos-duration="800" class="heading">
+      <h1 class="">Past Events</h1>
+    </div>
+    <div class="text-center d-flex justify-content-center">
+      <hr class="bg-dark" style="width:40vh;">
+    </div>
+    <div class="card-group p-5">
+      <div class="card m-2">
+        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
+          <h5 class="card-title font-weight-bold pt-2 mb-4">POP20 PUSH21</h5>
+          <p class="card-text pb-5">POP20 PUSH21 was an online coding contest conducted to build a robust Competitive
+            Programming culture on campus and to help students become better problem solvers, fostering learning and
+            professional development.
+          </p>
+          <a href="https://www.codechef.com/POPU2021">
+            <h4 class="text-dark contest-link">Contest Link</h4>
+          </a>
         </div>
-        <div class="col-md-6 text-center">
-          <img src="img/opportunity.png" class="rounded-start" id="opportunity-logo" alt="logo">
+      </div>
+      <div class="card m-2">
+        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
+          <h5 class="card-title font-weight-bold pt-2 mb-4">Rang de Code</h5>
+          <p class="card-text pb-5">'Rang de Code' was a short coding contest hosted on Codechef to celebrate different
+            colors of data structures and algorithms on the eve of the festival of Colors.</p>
+          <a href="https://www.codechef.com/RDEC2021?itm_campaign=contest_listing">
+            <h4 class="text-dark contest-link">Contest Link</h4>
+          </a>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
+          <h5 class="card-title font-weight-bold pt-2 mb-4">Code Anthem</h5>
+          <p class="card-text pb-5">Code Anthem 1.0 was an online coding contest hosted on CodeChef to build a
+            Competitive Programming culture on campus and to improve skills of students.
+          </p>
+          <a href="https://www.codechef.com/CANT2021">
+            <h4 class="text-dark contest-link">Contest Link</h4>
+          </a>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div data-aos="zoom-in-up" data-aos-duration="800" class="card-body card-hover">
+          <h5 class="card-title font-weight-bold pt-2 mb-4">CODEWARS</h5>
+          <p class="card-text pb-5">CodeWars was an online coding contest conducted on 15th December 2021 on CodeChef to
+            build skills of coders.</p>
+          <a href="https://www.codechef.com/MMCW2021">
+            <h4 class="text-dark contest-link">Contest Link</h4>
+          </a>
         </div>
       </div>
     </div>
   </section>
-
-  <section id="advisor">
-    <div class="card advisor-body">
-      <div class="row" id="advisor-content" data-aos="fade-left" data-aos-duration="800">
-        <div class="col-md-6 text-center">
-          <img src="img/faculty-advisor.jpeg" class="rounded-circle" id="advisor-logo" alt="logo">
-        </div>
-        <div class="col-md-6" id="advisor-text">
-          <div class="card-body">
-            <h5 class="card-title text-center" id="advisor-title">Our Faculty Advisor</h5>
-            <hr style="margin-left:100px;margin-right:100px; background-color:#4A4A4A;">
-            <div class="card-text text-center" id="advisor-point">
-              <div class="text-center" id="advisor-name">Dr. Rohit Tiwari</div>
-              <div class="text-center">Assistant Professor at Madan Mohan Malaviya University of Technology</div>
-              <div class="text-center">Currently serving as Faculty Advisor of CodeChef Chapter MMMUT, under the
-                guidance of whom we throve collectively and achieved greater heights and recognition, and wish to
-                maintain this legacy for years to come.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="faq">
-    <div class="container">
-      <div data-aos="zoom-in-up" data-aos-duration="800" class="heading">
-        <h1 class="head">FAQs</h1>
-      </div>
-      <div class="accordion">
-        <dl>
-          <dt class="mt-2">
-            <a href="#accordion1" aria-expanded="false" aria-controls="accordion1"
-              class="accordion-title accordionTitle js-accordionTrigger">What is the membership in CodeChef MMMUT
-              Chapter?
-            </a>
-          </dt>
-          <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
-            <p>We have two types memberships in CodeChef MMMUT Chapter: One is Community Membership for those who
-              want to learn and be part of this amazing community & second is Official Membership for people wanting
-              hands-on working experience in their favourite domains.</p>
-          </dd>
-          <dt class="mt-2">
-            <a href="#accordion2" aria-expanded="false" aria-controls="accordion2"
-              class="accordion-title accordionTitle js-accordionTrigger">Is the membership free?</a>
-          </dt>
-          <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
-            <p>Absolutely yes. We strongly believe that the most precious transaction we can have here at the CodeChef
-              MMMUT Chapter is that of knowledge, experience, and creating an amazing envioronment for all developer.
-              Although, for being a official member there will be some criteria for selection as official members, but
-              even that is free of cost.</p>
-          </dd>
-          <dt class="mt-2">
-            <a href="#accordion3" aria-expanded="false" aria-controls="accordion3"
-              class="accordion-title accordionTitle js-accordionTrigger">What are the criteria of community membership &
-              official membership?</a>
-          </dt>
-          <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
-            <p>For community membership there is no criteria other than a creative and inquisitive mind full of
-              curiosity and eager determination to make it big. But for official membership first criteria is resume
-              and then
-              according to candidate domain selection procedure can vary. But feel free to reach us.
-            </p>
-          </dd>
-          <dt class="mt-2">
-            <a href="#accordion4" aria-expanded="false" aria-controls="accordion4"
-              class="accordion-title accordionTitle js-accordionTrigger">Where can I reach you for support ?</a>
-          </dt>
-          <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
-            <p>You can contact us on our offical e-mail ID - ‘codechef.mmmut@gmail.com' or on our Instagram account.</p>
-          </dd>
-        </dl>
-      </div>
-    </div>
-  </section>
-
 
   <!-- Footer  -->
 
+  <!--Waves Container-->
+  <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+  </div>
+  <!--Waves end-->
+
+  </div>
+  <!--Header ends-->
+
   <!--Content starts-->
-  <footer id="footer">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="copy col-12 col-md-6 center">
-          <div class="text-center mt-2">&copy; Copyright <a href="https://linktr.ee/codechefmmmutchapter"
-              target="_blank" class="text-decoration-none"><strong class="text-dark">Codechef MMMUT
-                Chapter</strong></a>. All rights
-            reserved.</div>
-          <div class="text-center mb-2">Designed with <i class="fa-solid fa-heart"></i> by <a
-              href="https://linktr.ee/tushar_104/" target="_blank" class="text-decoration-none"><strong
-                class="text-dark">Tushar Kesarwani</strong></a></div>
-        </div>
-        <div class="social-icon col-12 col-md-6 center">
-          <div>
-            <span>
-              Follow Us:
-            </span>
-            <a href="https://www.linkedin.com/company/codechef-mmmut-chapter/mycompany/?viewAsMember=true"
-              target="_blank" class="mx-6 text-decoration-none handles"><i
-                class="fa-brands fa-linkedin text-dark"></i></a>
-            <a href="https://www.instagram.com/codechef.mmmut/" target="_blank"
-              class="mx-6 text-decoration-none handles"><i class="fa-brands fa-instagram text-dark"></i></a>
-            <a href="https://www.facebook.com/codechef.mmmut/" target="_blank"
-              class="mx-6 text-decoration-none handles"><i class="fa-brands fa-facebook text-dark"></i></a>
-            <a href="https://t.me/+09MFBpyvTPNmODdl" target="_blank" class="mx-6 text-decoration-none handles"><i
-                class="fa-brands fa-telegram text-dark"></i></a>
-            <a href="https://www.youtube.com/c/CodechefMMMUTChapter?sub_confirmation=1" target="_blank"
-              class="mx-6 text-decoration-none handles"><i class="fa-brands fa-youtube text-dark"></i></a>
+  <div class="content flex">
+    <footer id="footer">
+      <div class="footer-top container">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-info">
+              <div class="logos">
+                <a href="https://linktr.ee/codechefmmmutchapter" target="_blank"><img src="img/logo.png"
+                    alt="Codechef MMMUT Chapter LOGO" class="logo"></a>
+                <a href="http://www.mmmut.ac.in/" target="_blank"><img src="img/MMMUT LOGO.png" class="logo"
+                    alt="MMMUT logo" /></a>
+              </div>
+              <p>Codechef MMMUT Chapter is an outcome oriented coding community that aims to upskill all its members to
+                make them have successful careers.Come join us in this thrilling and amazing journey.And let’s Transform
+                India into Global Developer Powerhouse Together!</p>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Our Events</h4>
+              <hr class="bg-dark">
+              <ul style="list-style: none;">
+                <li><i class="fa-solid fa-laptop-code"></i> <a href="img/coming_soon.png" class="text-dark"> Coding
+                    Contests</a></li>
+                <li><i class="fa-solid fa-laptop-code"></i> <a href="img/coming_soon.png" class="text-dark"> Problem
+                    Solving
+                    Sessions</a></li>
+                <li><i class="fa-solid fa-laptop-code"></i> <a href="img/coming_soon.png" class="text-dark"> Training
+                    Sessions</a></li>
+                <li><i class="fa-solid fa-laptop-code"></i><a href="img/coming_soon.png" class="text-dark"> Learning
+                    Sprints</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <hr class="bg-dark">
+              <p>
+                MMMUT <br>
+                Gorakhpur<br>
+                U.P India <br>
+              </p>
+              <hr class="bg-dark">
+              <div class="text-center fs-2 m-2 social-icon">
+                <a href="https://www.linkedin.com/company/codechef-mmmut-chapter/mycompany/?viewAsMember=true"
+                  target="_blank" class="mx-6 text-decoration-none handles"><i
+                    class="fa-brands fa-linkedin text-dark"></i></a>
+                <a href="https://www.instagram.com/codechef.mmmut/" target="_blank"
+                  class="mx-6 text-decoration-none handles"><i class="fa-brands fa-instagram text-dark"></i></a>
+                <a href="https://www.facebook.com/codechef.mmmut/" target="_blank"
+                  class="mx-6 text-decoration-none handles"><i class="fa-brands fa-facebook text-dark"></i></a>
+                <a href="https://t.me/+09MFBpyvTPNmODdl" target="_blank" class="mx-6 text-decoration-none handles"><i
+                    class="fa-brands fa-telegram text-dark"></i></a>
+                <a href="https://www.youtube.com/c/CodechefMMMUTChapter?sub_confirmation=1" target="_blank"
+                  class="mx-6 text-decoration-none handles"><i class="fa-brands fa-youtube text-dark"></i></a>
+                <!-- <a href="#" target="_blank" class="mx-6 text-decoration-none handles"><i class="fa-brands fa-youtube"></i></a> -->
+              </div>
+            </div>
           </div>
         </div>
       </div>
-  </footer>
+      <div class="copy">
+        <div class="text-center mt-2">&copy; Copyright <a href="https://linktr.ee/codechefmmmutchapter" target="_blank"
+            class="text-decoration-none"><strong class="text-dark">Codechef MMMUT Chapter</strong></a>. All rights
+          reserved.</div>
+        <div class="text-center mb-2">Designed with <i class="fa-solid fa-heart"></i> by <a
+            href="https://linktr.ee/tushar_104/" target="_blank" class="text-decoration-none"><strong
+              class="text-dark">Tushar Kesarwani</strong></a></div>
+      </div>
+    </footer>
 
-  <!-- footer ends here  -->
+    <!-- footer ends here  -->
+
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
