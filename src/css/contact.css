@@ -5,12 +5,14 @@
     margin-right: 28%;
     padding-top: 1px;
     padding-bottom: 1px;
-    background-color: #154e3a91;
+    background-color: #21418991;
     border-color: rgba(0, 0, 0, 0);
     border-radius: 2px;
     border-style: inset;
-    box-shadow: 5px 10px 18px #c9f74ca1;
   }
+}
+#contact{
+  background: url(../../img/contact-us.jpg) no-repeat center;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -20,11 +22,10 @@
     margin-right: 4%;
     padding-top: 1px;
     padding-bottom: 1px;
-    background-color: #154e3a91;
+    background-color: #21418991;
     border-color: rgba(0, 0, 0, 0);
     border-radius: 2px;
     border-style: inset;
-    box-shadow: 5px 10px 18px #c9f74ca1;
   }
 }
 
@@ -35,11 +36,10 @@
     margin-right: 4%;
     padding-top: 1px;
     padding-bottom: 1px;
-    background-color: #154e3a91;
+    background-color: #21418991;
     border-color: rgba(0, 0, 0, 0);
     border-radius: 2px;
     border-style: inset;
-    box-shadow: 5px 10px 18px #c9f74ca1;
   }
 }
 
@@ -50,11 +50,10 @@
     padding-right: 4%;
     padding-top: 1px;
     padding-bottom: 1px;
-    background-color: #154e3a91;
+    background-color: #21418991;
     border-color: rgba(0, 0, 0, 0);
     border-radius: 2px;
     border-style: inset;
-    box-shadow: 5px 10px 18px #c9f74ca1;
   }
 }
 

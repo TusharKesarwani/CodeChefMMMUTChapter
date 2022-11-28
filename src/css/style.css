@@ -61,6 +61,17 @@ a {
   z-index: 0;
 }
 
+/* @media (max-width: 769px) {
+  #animated_background {
+    background: none;
+  }
+
+  #animated_background > div {
+    background-image: url(../../img/bg.jpg);
+    background-attachment: fixed;
+  }
+} */
+
 #intro1 {
   font-family: 'Roboto slab', serif;
   font-size: 40px;
