@@ -63,7 +63,8 @@ a {
 
 /* @media (max-width: 769px) {
   #animated_background {
-    background: none;
+    height: 100vh;
+    width: 100vw;
   }
 
   #animated_background > div {
@@ -148,7 +149,7 @@ a {
 
 #mission-title, #opportunity-title, #advisor-title {
   font-weight:500;
-  color:#4A4A4A;
+  /* color:#4A4A4A; */
 }
 
 #mission-point, #opportunity-point, #advisor-point {
@@ -196,6 +197,11 @@ a {
   height: 30px;
   width: 30px;
   margin-right: 10px;
+}
+
+.opportunity-body {
+  background-image: url("../../img/bg-2.png");
+  background-attachment: fixed;
 }
 
 /* End of Header */
