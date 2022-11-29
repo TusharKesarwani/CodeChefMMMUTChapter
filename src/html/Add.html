@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Information" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, VANTA JS, CodeChef, MMMUT, Chapter" />
+    <meta name="author" content="Tushar Kesarwani" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeChef MMMUT Chapter | Add</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Main CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Team CSS -->
+    <link rel="stylesheet" href="../css/contact.css">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <!--google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Animate.css--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link rel="icon" href="../../img/favicon.ico" type="image/png" />
+</head>
+
+<body onload="myfunction()">
+    <div id="load"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed w-100 d-flexbox" style="z-index: 1000">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <a href="index.html"><img src="../../img/logo.png" class="logo" alt="cc-chapter-logo" /></a>
+                <a href="http://www.mmmut.ac.in/" target="_blank"><img src="../../img/MMMUT LOGO.png" class="logo"
+                        alt="mmmut-logo" /></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
+                    <li class="nav-item me-2">
+                        <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" aria-current="page" href="../../index.html#what_do_we_do">What do
+                            we
+                            do</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" aria-current="page" href="./team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" aria-current="page" href="contest.html">Upcoming Contests</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" aria-current="page" href="../../index.html#past_events">Past
+                            Events</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" aria-current="page" href="alumni.html">Our Alumni</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item me-2">
+                      <a class="nav-link active" aria-current="page" href="Add.html">Add</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <button class="btn-to-top">
+        <i class="fa fa-arrow-up fa-2x"></i>
+    </button>
+    <!-- <div><h2 class="my-3" style="text-align: center;">Welcome To Admin-Area</h2></div> -->
+    <!-- <hr>
+    <br> -->
+    <section class="p-5 text-center" id="contact"
+    style="background-size: cover; background-position: center center;">
+    <section class="page" id="Key-velidation">
+
+        <!-- Section heading -->
+        <h3 class="text-center font-weight-bold text-white mt-5 mb-3">Welcome To Admin-Area</h3>
+        <!-- Section description -->
+        <h4 class="text-center font-weight-normal text-white mx-auto mb-4 pb-2">Provide us your Information</h4>
+
+        <form class="mb-5 mx-md-5" action="/2020071016Add" method="POST">
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+
+                    <!-- Name -->
+                    <input type="text" id="name" class="form-control" placeholder="Name" name="Name">
+
+                </div>
+                <div class="col-md-4 mb-4">
+
+                    <!-- Roll No. -->
+                    <input id="rollno" type="number" class="form-control" placeholder="Rollno" name="Rollno" required>
+
+                </div>
+                <div class="col-md-4 mb-4">
+
+                    <!-- Year -->
+                    <input id="year" type="text" class="form-control" placeholder="Year" name="Year" required>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mb-4">
+
+                    <!-- Role -->
+                    <input type="text" id="Role" class="form-control" placeholder="Role" name="Role" required>
+
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 mb-4">
+
+                <!-- Password -->
+                <input type="password" id="Password" class="form-control" placeholder="Password" name="Password" required>
+
+            </div>
+                <div class="col-md-12">
+
+                    <div class="form-group mb-4">
+                        <textarea class="form-control rounded" id="message" rows="3"
+                            placeholder="Message" name="Message"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn bg-primary">Submit</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+
+    </section>
+</section>
+  
+    <footer id="footer">
+        <div class="footer-top container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <div class="logos">
+                            <a href="https://linktr.ee/codechefmmmutchapter" target="_blank"><img
+                                    src="../../img/logo.png" alt="Codechef MMMUT Chapter LOGO" class="logo"></a>
+                            <a href="http://www.mmmut.ac.in/" target="_blank"><img src="../../img/MMMUT LOGO.png"
+                                    class="logo" alt="MMMUT logo" /></a>
+                        </div>
+                        <p>Codechef MMMUT Chapter is an outcome oriented coding community that aims to upskill all its
+                            members to make them have successful careers.Come join us in this thrilling and amazing
+                            journey.And let’s Transform India into Global Developer Powerhouse Together!</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h4>Our Events</h4>
+                        <hr class="bg-dark">
+                        <ul>
+                            <li><i class="fa fa-angle-right"></i> <a href="../../img/coming_soon.png"
+                                    class="text-dark">Coding
+                                    Contests</a></li>
+                            <li><i class="fa fa-angle-right"></i> <a href="../../img/coming_soon.png"
+                                    class="text-dark">Problem Solving Sessions</a></li>
+                            <li><i class="fa fa-angle-right"></i> <a href="../../img/coming_soon.png"
+                                    class="text-dark">Training Sessions</a></li>
+                            <li><i class="fa fa-angle-right"></i> <a href="../../img/coming_soon.png"
+                                    class="text-dark">Learning Sprints</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <hr class="bg-dark">
+                        <p>
+                            MMMUT <br>
+                            Gorakhpur<br>
+                            U.P India <br>
+                        </p>
+                        <hr class="bg-dark">
+                        <div class="text-center fs-2 m-2 social-icon">
+                            <a href="https://www.linkedin.com/company/codechef-mmmut-chapter/mycompany/?viewAsMember=true"
+                                target="_blank" class="mx-6 text-decoration-none handles"><i
+                                    class="fa-brands fa-linkedin text-dark"></i></a>
+                            <a href="https://www.instagram.com/codechef.mmmut/" target="_blank"
+                                class="mx-6 text-decoration-none handles"><i
+                                    class="fa-brands fa-instagram text-dark"></i></a>
+                            <a href="https://www.facebook.com/codechef.mmmut/" target="_blank"
+                                class="mx-6 text-decoration-none handles"><i
+                                    class="fa-brands fa-facebook text-dark"></i></a>
+                            <a href="https://t.me/+09MFBpyvTPNmODdl" target="_blank"
+                                class="mx-6 text-decoration-none handles"><i
+                                    class="fa-brands fa-telegram text-dark"></i></a>
+                            <a href="https://www.youtube.com/c/CodechefMMMUTChapter?sub_confirmation=1" target="_blank"
+                                class="mx-6 text-decoration-none handles"><i
+                                    class="fa-brands fa-youtube text-dark"></i></a>
+                            <!-- <a href="#" target="_blank" class="mx-6 text-decoration-none handles"><i class="fa-brands fa-youtube"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="text-center mt-2">&copy; Copyright <a href="https://linktr.ee/codechefmmmutchapter"
+                    target="_blank" class="text-decoration-none"><strong class="text-dark">Codechef MMMUT
+                        Chapter</strong></a>. All rights reserved.</div>
+            <div class="text-center mb-2">Designed with <i class="fa-solid fa-heart"></i> by <a
+                    href="https://linktr.ee/tushar_104/" target="_blank" class="text-decoration-none"><strong
+                        class="text-dark">Tushar Kesarwani</strong></a></div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d6de929348.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var preloader = document.getElementById('load');
+        function myfunction() {
+            preloader.style.display = 'none';
+        }
+    </script>
+
+    <!-- btn-to-top script start -->
+    <script>
+        const btn = document.querySelector('.btn-to-top');
+        btn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+        })
+    </script>
+    <!-- btn-to-top script ends-->
+
+    <script type="text/javascript" src="../js/particles.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+
+</body>
+
+</html>
