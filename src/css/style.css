@@ -117,6 +117,89 @@ a {
 
 /* End of Header */
 
+
+/* Start of Header */
+
+#mission-text {
+  display: grid;
+  align-items: center;
+}
+
+#mission-logo, #opportunity-logo {
+  width: 80%;
+  height: auto;
+}
+
+.mission-body {
+  background-color: #010f1a !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  /* box-shadow: 0 -2px 4px #00000026 !important; */
+}
+
+.opportunity-body {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+#mission-content, #opportunity-content {
+  font-family: "Open Sans" , sans-serif;
+}
+
+#mission-title, #opportunity-title, #advisor-title {
+  font-weight:500;
+  color:#4A4A4A;
+}
+
+#mission-point, #opportunity-point, #advisor-point {
+  padding-left: 2%;
+  font-family: "Open Sans";
+  font-weight: 500;
+}
+
+@media (min-width: 1013px) {
+  #mission-point, #opportunity-point, #advisor-point {
+    padding-left: 10px;
+  }
+  #mission-title, #opportunity-title {
+    font-size: 60px;
+  }
+  #advisor-title {
+    font-size: 60px;
+  }
+  #advisor-name {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1012px) {
+  #mission-title, #opportunity-title, #advisor-title {
+    font-size: 40px;
+  }
+  #advisor-name {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  #mission-title, #opportunity-title, #advisor-title {
+    font-size: 30px;
+  }
+}
+
+#mission-point > div, #opportunity-point > div, #advisor-point > div {
+  padding:10px;
+}
+
+
+.opportunity-icon, .mission-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* End of Header */
+
 /* Start of Go Top button */
 
 .go-top {
