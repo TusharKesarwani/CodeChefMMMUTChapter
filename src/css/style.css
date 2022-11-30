@@ -11,7 +11,6 @@ reset
 --------------------------------------------- 
 */
 
-
 * {
   margin: 0px;
   padding: 0px;
@@ -34,7 +33,7 @@ body {
   height: 100vh;
   width: 100%;
   position: fixed;
-  background: #FFFCF4 url(/img/Loading_icon.gif) no-repeat center;
+  background: #fffcf4 url(/img/Loading_icon.gif) no-repeat center;
   z-index: 9999;
 }
 
@@ -56,40 +55,14 @@ a {
   height: 100vh;
   width: 100vw;
   z-index: 0;
-  /* background-image: url("../../img/bg-2.png"); */
-  background-attachment: fixed;
-  background-position:center;
-  min-height: 100vh;
-	background-color: rgb(53, 36, 36);
 }
-
-#animated_background > video {
-	position: absolute;
-	object-fit: cover;
-	width: 100vw;
-	height: 100vh;
-	opacity: 0.7;
-}
-
-/* @media (max-width: 769px) {
-  #animated_background {
-    height: 100vh;
-    width: 100vw;
-  }
-
-  #animated_background > div {
-    background-image: url(../../img/bg.jpg);
-    background-attachment: fixed;
-  }
-} */
 
 #intro1 {
-  font-family: 'Roboto slab', serif;
+  font-family: "Roboto slab", serif;
   font-size: 40px;
   font-weight: bold;
   padding-top: 40vh;
-  color: rgb(255, 255, 255);
-  /* background: linear-gradient(
+  background: linear-gradient(
     90deg,
     rgb(79, 79, 240),
     #fff,
@@ -99,12 +72,12 @@ a {
   );
   background-size: 400%;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   letter-spacing: 2px;
   animation: animate 15s linear infinite;
 }
 
-/* @keyframes animate {
+@keyframes animate {
   0% {
     background-position: 0%;
   }
@@ -112,7 +85,7 @@ a {
   100% {
     background-position: 400%;
   }
-} */
+}
 
 #intro2 {
   font-size: 18px;
@@ -129,7 +102,6 @@ a {
 
 /* End of Header */
 
-
 /* Start of Header */
 
 #mission-text {
@@ -137,7 +109,8 @@ a {
   align-items: center;
 }
 
-#mission-logo, #opportunity-logo {
+#mission-logo,
+#opportunity-logo {
   width: 80%;
   height: auto;
 }
@@ -157,25 +130,33 @@ a {
   background-position: center;
 }
 
-#mission-content, #opportunity-content {
-  font-family: "Open Sans" , sans-serif;
+#mission-content,
+#opportunity-content {
+  font-family: "Open Sans", sans-serif;
 }
 
-#mission-title, #opportunity-title, #advisor-title {
-  font-weight:500;
+#mission-title,
+#opportunity-title,
+#advisor-title {
+  font-weight: 500;
 }
 
-#mission-point, #opportunity-point, #advisor-point {
+#mission-point,
+#opportunity-point,
+#advisor-point {
   padding-left: 2%;
   font-family: "Open Sans";
   font-weight: 500;
 }
 
 @media (min-width: 1013px) {
-  #mission-point, #opportunity-point, #advisor-point {
+  #mission-point,
+  #opportunity-point,
+  #advisor-point {
     padding-left: 10px;
   }
-  #mission-title, #opportunity-title {
+  #mission-title,
+  #opportunity-title {
     font-size: 60px;
   }
   #advisor-title {
@@ -187,7 +168,9 @@ a {
 }
 
 @media (max-width: 1012px) {
-  #mission-title, #opportunity-title, #advisor-title {
+  #mission-title,
+  #opportunity-title,
+  #advisor-title {
     font-size: 40px;
   }
   #advisor-name {
@@ -196,17 +179,21 @@ a {
 }
 
 @media (max-width: 800px) {
-  #mission-title, #opportunity-title, #advisor-title {
+  #mission-title,
+  #opportunity-title,
+  #advisor-title {
     font-size: 30px;
   }
 }
 
-#mission-point > div, #opportunity-point > div, #advisor-point > div {
-  padding:10px;
+#mission-point > div,
+#opportunity-point > div,
+#advisor-point > div {
+  padding: 10px;
 }
 
-
-.opportunity-icon, .mission-icon {
+.opportunity-icon,
+.mission-icon {
   height: 30px;
   width: 30px;
   margin-right: 10px;
@@ -241,7 +228,6 @@ a {
   text-decoration: none;
 }
 
-
 .btn-to-top {
   z-index: 1000;
   text-align: center;
@@ -254,7 +240,6 @@ a {
   background-color: #35dada;
   border: none;
 }
-
 
 /* End of Go Top button */
 
@@ -274,10 +259,9 @@ a {
   padding: 0px;
 }
 
-
-.card1{
-  width:260px;
-  height:350px;
+.card1 {
+  width: 260px;
+  height: 350px;
 }
 .card-flip > div {
   backface-visibility: hidden;
@@ -302,20 +286,17 @@ a {
 .card-flip:hover .card-front {
   transform: rotateY(-180deg);
 }
-  
+
 .card-flip:hover .card-back {
   transform: rotateY(0deg);
 }
-.card1.blue{
-
- background-image: linear-gradient(180deg,#2A2A72,#009FFB 100%);
-
+.card1.blue {
+  background-image: linear-gradient(180deg, #2a2a72, #009ffb 100%);
 }
-.big-banner{
+.big-banner {
   background-color: #010f1a;
   background-size: cover;
 }
-
 
 /* End of Card Section */
 
@@ -385,4 +366,3 @@ a {
 }
 
 /* End of Footer */
-
