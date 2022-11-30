@@ -1,21 +1,43 @@
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
+/* 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+
+
 * {
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  /* background-color: #fff; */
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 #load {
   height: 100vh;
   width: 100%;
   position: fixed;
-  background: #fff url(/img/Loading_icon.gif) no-repeat center;
+  background: #FFFCF4 url(/img/Loading_icon.gif) no-repeat center;
   z-index: 9999999;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 .logo {
@@ -24,7 +46,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  /* color: white; */
 }
 
 ::-webkit-scrollbar {
@@ -39,18 +61,30 @@ a {
   z-index: 0;
 }
 
+/* @media (max-width: 769px) {
+  #animated_background {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #animated_background > div {
+    background-image: url(../../img/bg.jpg);
+    background-attachment: fixed;
+  }
+} */
+
 #intro1 {
+  font-family: 'Roboto slab', serif;
   font-size: 40px;
   font-weight: bold;
   padding-top: 40vh;
   background: linear-gradient(
     90deg,
-    purple,
+    rgb(79, 79, 240),
     #fff,
-    #ff00f3,
-    #0033ff,
-    #ff00c4,
-    purple
+    rgb(79, 79, 240),
+    white,
+    rgb(79, 79, 240)
   );
   background-size: 400%;
   letter-spacing: 2px;
@@ -82,6 +116,98 @@ a {
   border-radius: 50%;
 }
 
+/* End of Header */
+
+
+/* Start of Header */
+
+#mission-text {
+  display: grid;
+  align-items: center;
+}
+
+#mission-logo, #opportunity-logo {
+  width: 80%;
+  height: auto;
+}
+
+.mission-body {
+  background-color: #010f1a !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  /* box-shadow: 0 -2px 4px #00000026 !important; */
+}
+
+.opportunity-body {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+#mission-content, #opportunity-content {
+  font-family: "Open Sans" , sans-serif;
+}
+
+#mission-title, #opportunity-title, #advisor-title {
+  font-weight:500;
+  /* color:#4A4A4A; */
+}
+
+#mission-point, #opportunity-point, #advisor-point {
+  padding-left: 2%;
+  font-family: "Open Sans";
+  font-weight: 500;
+}
+
+@media (min-width: 1013px) {
+  #mission-point, #opportunity-point, #advisor-point {
+    padding-left: 10px;
+  }
+  #mission-title, #opportunity-title {
+    font-size: 60px;
+  }
+  #advisor-title {
+    font-size: 60px;
+  }
+  #advisor-name {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1012px) {
+  #mission-title, #opportunity-title, #advisor-title {
+    font-size: 40px;
+  }
+  #advisor-name {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  #mission-title, #opportunity-title, #advisor-title {
+    font-size: 30px;
+  }
+}
+
+#mission-point > div, #opportunity-point > div, #advisor-point > div {
+  padding:10px;
+}
+
+
+.opportunity-icon, .mission-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.opportunity-body {
+  background-image: url("../../img/bg-2.png");
+  background-attachment: fixed;
+}
+
+/* End of Header */
+
+/* Start of Go Top button */
+
 .go-top {
   background: none repeat scroll 0 0 padding-box #1099dd;
   bottom: 20px;
@@ -107,6 +233,25 @@ a {
   text-decoration: none;
 }
 
+
+.btn-to-top {
+  z-index: 1000;
+  text-align: center;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  height: 50px;
+  width: 48px;
+  border-radius: 14px;
+  background-color: #35dada;
+  border: none;
+}
+
+
+/* End of Go Top button */
+
+/* Start of Card Section */
+
 .card-hover:hover {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -120,6 +265,50 @@ a {
   margin: 0px;
   padding: 0px;
 }
+
+.card1{
+  width:260px;
+  height:350px;
+}
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+.card1.blue{
+/* backdrop-filter: blur(1px);*/ 
+ background-image: linear-gradient(180deg,#2A2A72,#009FFB 100%);
+ /*#0b0996,#232b9b,#0ca6ba*/
+}
+.big-banner{
+  /*background-image: url("/img/bg.jpg");*/
+  background-color: #010f1a;
+  background-size: cover;
+}
+
+/* End of Card Section */
 
 /* Start of Footer */
 
@@ -158,7 +347,7 @@ a {
   width: 100%;
   position: absolute;
   top: 350px;
-  background-color: #62cfcfc8;
+  background-color: #010f1a;
   padding: 20px 0px 20px 0px;
 }
 
@@ -188,15 +377,3 @@ a {
 
 /* End of Footer */
 
-.btn-to-top {
-  z-index: 999;
-  text-align: center;
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  height: 50px;
-  width: 48px;
-  border-radius: 14px;
-  background-color: #35dada;
-  border: none;
-}
