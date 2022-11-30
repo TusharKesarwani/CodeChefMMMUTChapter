@@ -1,3 +1,18 @@
+// const header = document.getElementById("header");
+
+// const resize = () => {
+//   header.removeAttribute("class");
+//   if (window.innerWidth > 769) {
+//     header.classList.add("animated_background");
+//   } else {
+//     header.classList.add("non_animated_background");
+//   }
+//   console.log(header);
+// }
+
+// window.onresize = resize;
+// window.onload = resize;
+
 VANTA.NET({
   el: document.getElementById("animated_background"),
   mouseControls: true,

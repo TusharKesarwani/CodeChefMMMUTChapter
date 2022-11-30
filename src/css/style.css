@@ -17,14 +17,12 @@ reset
   padding: 0px;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
   font-weight: 400;
-  /* background-color: #fff; */
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -37,7 +35,7 @@ body {
   width: 100%;
   position: fixed;
   background: #FFFCF4 url(/img/Loading_icon.gif) no-repeat center;
-  z-index: 9999999;
+  z-index: 9999;
 }
 
 .logo {
@@ -46,7 +44,6 @@ body {
 
 a {
   text-decoration: none;
-  /* color: white; */
 }
 
 ::-webkit-scrollbar {
@@ -59,6 +56,19 @@ a {
   height: 100vh;
   width: 100vw;
   z-index: 0;
+  /* background-image: url("../../img/bg-2.png"); */
+  background-attachment: fixed;
+  background-position:center;
+  min-height: 100vh;
+	background-color: rgb(53, 36, 36);
+}
+
+#animated_background > video {
+	position: absolute;
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0.7;
 }
 
 /* @media (max-width: 769px) {
@@ -78,7 +88,8 @@ a {
   font-size: 40px;
   font-weight: bold;
   padding-top: 40vh;
-  background: linear-gradient(
+  color: rgb(255, 255, 255);
+  /* background: linear-gradient(
     90deg,
     rgb(79, 79, 240),
     #fff,
@@ -87,13 +98,13 @@ a {
     rgb(79, 79, 240)
   );
   background-size: 400%;
-  letter-spacing: 2px;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
+  letter-spacing: 2px;
   animation: animate 15s linear infinite;
 }
 
-@keyframes animate {
+/* @keyframes animate {
   0% {
     background-position: 0%;
   }
@@ -101,7 +112,7 @@ a {
   100% {
     background-position: 400%;
   }
-}
+} */
 
 #intro2 {
   font-size: 18px;
@@ -135,12 +146,15 @@ a {
   background-color: #010f1a !important;
   border-top: none !important;
   border-bottom: none !important;
-  /* box-shadow: 0 -2px 4px #00000026 !important; */
 }
 
 .opportunity-body {
   border-top: none !important;
   border-bottom: none !important;
+  background-image: url("../../img/bg.jpg");
+  background-attachment: fixed;
+  min-height: 70vh;
+  background-position: center;
 }
 
 #mission-content, #opportunity-content {
@@ -149,7 +163,6 @@ a {
 
 #mission-title, #opportunity-title, #advisor-title {
   font-weight:500;
-  /* color:#4A4A4A; */
 }
 
 #mission-point, #opportunity-point, #advisor-point {
@@ -197,11 +210,6 @@ a {
   height: 30px;
   width: 30px;
   margin-right: 10px;
-}
-
-.opportunity-body {
-  background-image: url("../../img/bg-2.png");
-  background-attachment: fixed;
 }
 
 /* End of Header */
