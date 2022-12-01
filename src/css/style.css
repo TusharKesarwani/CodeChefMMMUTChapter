@@ -6,6 +6,7 @@ font & reset css
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800;900&display=swap');
 /* 
 ---------------------------------------------
 reset
@@ -21,7 +22,7 @@ reset
 
 html,
 body {
-  font-family: "Roboto", serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
@@ -34,13 +35,16 @@ body {
   height: 100vh;
   width: 100%;
   position: fixed;
-  background: #fffcf4 url(/img/Loading_icon.gif) no-repeat center;
+  background: #fffcf4 url(../../img/Loading_icon.gif) no-repeat center;
   z-index: 9999;
 }
 
 .logo {
   background-color: transparent;
-  
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  border-radius: 50%;
 }
 
 a {
@@ -49,6 +53,13 @@ a {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+hr {
+  /* width:40vh; */
+  background-color: #fff;
+  height: 4px !important;
+  border-radius: 10px;
 }
 
 /* Start of Header */
@@ -60,46 +71,39 @@ a {
 }
 
 #intro1 {
-  font-family: "Roboto slab", serif;
-  font-size: 40px;
-  font-weight: bold;
+  font-family: "Barlow",sans-serif;
+  font-size: 24px;
+  font-weight: semi-bold;
   padding-top: 40vh;
-  background: linear-gradient(
-    90deg,
-    rgb(79, 79, 240),
-    #fff,
-    rgb(79, 79, 240),
-    white,
-    rgb(79, 79, 240)
-  );
-  background-size: 400%;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  letter-spacing: 2px;
-  animation: animate 15s linear infinite;
+  color: #fff;
 }
 
-@keyframes animate {
-  0% {
-    background-position: 0%;
-  }
-
-  100% {
-    background-position: 400%;
-  }
-}
-
-#intro2 {
-  font-size: 18px;
-  font-weight: bold;
+.intro2 {
+  font-family: "Barlow",sans-serif;
+  font-size: 80px;
   margin-top: 1vh;
+  color:#fff;
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
-  margin: 0 5px;
-  border-radius: 50%;
+@media (max-width:991px) {
+  .intro2 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width:769px) {
+    #intro1 {
+      font-size: 18px;
+    }
+    .intro2 {
+      font-size: 40px;
+    }
+}
+
+@media (max-width:317px) {
+  .intro2 {
+    font-size: 30px;
+  }
 }
 .logo_foot {
   width: 80px;
@@ -109,7 +113,11 @@ a {
 }
 /* End of Header */
 
-/* Start of Header */
+/* Start of mission and opportunity section */
+
+#mission, #opportunities {
+  background-color: #010f1a !important;
+}
 
 #mission-text {
   display: grid;
@@ -133,6 +141,8 @@ a {
   border-bottom: none !important;
   background-image: url("../../img/bg.jpg");
   background-attachment: fixed;
+  background-size: cover;
+  background-position: left;
   min-height: 70vh;
   background-position: center;
 }
@@ -211,7 +221,7 @@ a {
   margin-right: 10px;
 }
 
-/* End of Header */
+/* End of Mission and opportunity section */
 
 /* Start of Go Top button */
 
