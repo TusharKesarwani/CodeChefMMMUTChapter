@@ -25,6 +25,7 @@
   <!-- Favicon -->
   <link rel="icon" href="img/favicon.ico" type="image/png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
 <body onload="myfunction()">
@@ -104,16 +105,16 @@
             <div class="card-text" id="mission-point">
               <div class="d-flex">
                 <div><img src="img/mission-1.png" class="rounded-start mission-icon" alt="icon"></div>
-                <div>To build a robust Competitive Programming culture on campus.</div>
+                <div class="oppotext">To build a robust Competitive Programming culture on campus.</div>
               </div>
               <div class="d-flex">
                 <div><img src="img/mission-1.png" class="rounded-start mission-icon" alt="icon"></div>
-                <div>To help students become better problem solvers fostering learning and professional development.
+                <div class="oppotext">To help students become better problem solvers fostering learning and professional development.
                 </div>
               </div>
               <div class="d-flex">
                 <div><img src="img/mission-1.png" class="rounded-start mission-icon" alt="icon"></div>
-                <div>To build a community of coders who are willing to help each other.</div>
+                <div class="oppotext">To build a community of coders who are willing to help each other.</div>
               </div>
             </div>
           </div>
@@ -132,15 +133,15 @@
             <div class="card-text" id="opportunity-point">
               <div class="d-flex">
                 <div><img src="img/opportunity-1.png" class="rounded-start opportunity-icon" alt="icon"></div>
-                <div>Events, meetups, and speaker sessions on campus to raise awareness.</div>
+                <div class="oppotext">Events, meetups, and speaker sessions on campus to raise awareness.</div>
               </div>
               <div class="d-flex">
                 <div><img src="img/opportunity-1.png" class="rounded-start opportunity-icon" alt="icon"></div>
-                <div>Hosting various contests and competitions to facilitate learning.</div>
+                <div class="oppotext">Hosting various contests and competitions to facilitate learning.</div>
               </div>
               <div class="d-flex">
                 <div><img src="img/opportunity-1.png" class="rounded-start opportunity-icon" alt="icon"></div>
-                <div>Conducting programming workshops and doubt-sessions for better learning.</div>
+                <div class="oppotext">Conducting programming workshops and doubt-sessions for better learning.</div>
               </div>
             </div>
           </div>
@@ -243,14 +244,14 @@
   <!--Content starts-->
   <div class="content flex">
     <footer id="footer">
-      <div class="footer-top container">
+      <div class="footer-top container temp">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-6 footer-info">
               <div class="logos">
                 <a href="https://linktr.ee/codechefmmmutchapter" target="_blank"><img src="img/logo.png"
-                    alt="Codechef MMMUT Chapter LOGO" class="logo"></a>
-                <a href="http://www.mmmut.ac.in/" target="_blank"><img src="img/MMMUT LOGO.png" class="logo"
+                    alt="Codechef MMMUT Chapter LOGO" class="logo_foot"></a>
+                <a href="http://www.mmmut.ac.in/" target="_blank"><img src="img/MMMUT LOGO.png" class="logo_foot"
                     alt="MMMUT logo" /></a>
               </div>
               <p>Codechef MMMUT Chapter is a community of coding enthusiasts that aims to enhance coding skills of its
@@ -259,30 +260,30 @@
             </div>
             <div class="col-lg-4 col-md-6 footer-links">
               <h4>Our Events</h4>
-              <hr class="bg-dark">
+              <hr class="bg-light">
               <ul style="list-style: none;">
-                <li><i class="fa-solid fa-laptop-code"></i> <a href="img/coming_soon.png" class="text-dark"> Coding
+                <li><i class="fa-solid fa-laptop-code"></i> <a href="img/coming_soon.png" class="text-light"> Coding
                     Contests</a></li>
-                <li><i class="fa-solid fa-laptop-code"></i> <a href="img/coming_soon.png" class="text-dark"> Problem
+                <li><i class="fa-solid fa-laptop-code"></i> <a href="img/coming_soon.png" class="text-light"> Problem
                     Solving
                     Sessions</a></li>
-                <li><i class="fa-solid fa-laptop-code"></i> <a href="img/coming_soon.png" class="text-dark"> Training
+                <li><i class="fa-solid fa-laptop-code"></i> <a href="img/coming_soon.png" class="text-light"> Training
                     Sessions</a></li>
-                <li><i class="fa-solid fa-laptop-code"></i><a href="img/coming_soon.png" class="text-dark"> Learning
+                <li><i class="fa-solid fa-laptop-code"></i><a href="img/coming_soon.png" class="text-light"> Learning
                     Sprints</a></li>
               </ul>
             </div>
             <div class="col-lg-4 col-md-6 footer-contact">
               <h4>Contact Us</h4>
-              <hr class="bg-dark">
+              <hr class="bg-light">
               <p>
                 MMMUT <br>
                 Gorakhpur<br>
                 U.P India <br>
               </p>
-              <hr class="bg-dark">
-              <div class="text-center fs-2 m-2 social-icon">
-                <a href="https://www.linkedin.com/company/codechef-mmmut-chapter/mycompany/?viewAsMember=true"
+              <hr class="bg-light">
+              <div>
+                <!-- <a href="https://www.linkedin.com/company/codechef-mmmut-chapter/mycompany/?viewAsMember=true"
                   target="_blank" class="mx-6 text-decoration-none handles"><i
                     class="fa-brands fa-linkedin text-dark"></i></a>
                 <a href="https://www.instagram.com/codechef.mmmut/" target="_blank"
@@ -293,7 +294,23 @@
                     class="fa-brands fa-telegram text-dark"></i></a>
                 <a href="https://www.youtube.com/c/CodechefMMMUTChapter?sub_confirmation=1" target="_blank"
                   class="mx-6 text-decoration-none handles"><i class="fa-brands fa-youtube text-dark"></i></a>
-                <!-- <a href="#" target="_blank" class="mx-6 text-decoration-none handles"><i class="fa-brands fa-youtube"></i></a> -->
+                <a href="#" target="_blank" class="mx-6 text-decoration-none handles"><i class="fa-brands fa-youtube"></i></a> -->
+                <ul class="social_btn">
+                  <li>
+                    <a href="https://www.facebook.com/codechef.mmmut/">
+                      <i class="fab fa-facebook-f icon"></i>    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/codechef.mmmut/"><i class="fab fa-instagram icon"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/codechef-mmmut-chapter/mycompany/?viewAsMember=true"><i class="fab fa-linkedin-in icon"></i></a></li>
+                  <li>
+                    <a href="https://www.youtube.com/c/CodechefMMMUTChapter?sub_confirmation=1"><i class="fab fa-youtube icon"></i></a></li>
+                    <li>
+                      <a href="https://t.me/+09MFBpyvTPNmODdl"><i class="fab fa-telegram icon"></i></a></li>
+                    <li>
+                </ul>
               </div>
             </div>
           </div>
@@ -305,8 +322,8 @@
           All rights
           reserved.</div>
         <div class="text-center text-white mb-2">Designed with <i class="fa-solid fa-heart"></i> by <a
-            href="https://linktr.ee/tushar_104/" target="_blank" class="text-decoration-none"><strong
-              class="text-white">Tushar Kesarwani</strong></a></div>
+            href="/index.html" target="_blank" class="text-decoration-none"><strong
+              class="text-white">Team Codechef MMMUT</strong></a></div>
       </div>
     </footer>
   </div>
