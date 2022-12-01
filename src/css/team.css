@@ -44,7 +44,7 @@
   bottom: -48px;
   left: 20px;
   right: 20px;
-  background: #0d1a1ac5;
+  background: #161616;
   padding: 15px 0;
   border-radius: 4px;
 }
@@ -64,7 +64,7 @@
   display: block;
   width: 50px;
   height: 1px;
-  background: #1d3501;
+  background: #1579D6;;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -96,12 +96,12 @@
 
 .team-info {
   border-radius: 4px;
-  box-shadow: 2px 3px 12px #c9f74ca1;
+  box-shadow: 2px 1px 10px #1579D6;
 }
 
 .team-1 {
   border-radius: 4px;
-  box-shadow: 2px 0px 18px #000000f3;
+  /* box-shadow: 2px 0px 10px #1579D6; */
 }
 /* End of Our Team Section */
 
