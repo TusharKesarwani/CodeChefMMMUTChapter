@@ -5,6 +5,7 @@ font & reset css
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto+Slab:wght@700&display=swap');
 /* 
 ---------------------------------------------
 reset
@@ -39,6 +40,7 @@ body {
 
 .logo {
   background-color: transparent;
+  
 }
 
 a {
@@ -99,7 +101,12 @@ a {
   margin: 0 5px;
   border-radius: 50%;
 }
-
+.logo_foot {
+  width: 80px;
+  height: 80px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
 /* End of Header */
 
 /* Start of Header */
@@ -139,6 +146,11 @@ a {
 #opportunity-title,
 #advisor-title {
   font-weight: 500;
+}
+
+.oppotext{
+  font-family: 'Lora', serif;
+  font-size: large;
 }
 
 #mission-point,
@@ -316,15 +328,95 @@ a {
   position: relative;
   min-height: 15vh;
   width: 100%;
-  background-color: white;
-  color: rgb(10, 9, 9);
+  background-image: url(../../img/bg_footer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
   font-size: 90%;
   display: grid;
   justify-content: center;
   align-items: center;
-  padding: 40px 0px 0px 0px;
+  padding: 120px 0px 0px 0px;
 }
 
+.social_btn {
+  display: flex;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social_btn li {
+  list-style: none;
+}
+
+.social_btn li a {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+.social_btn li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.social_btn li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.social_btn li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.social_btn li a:hover:before {
+  top: 0;
+}
+
+.social_btn li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+.social_btn li:nth-child(2) a:before{
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.social_btn li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.social_btn li:nth-child(4) a:before {
+  background: #c2230e;
+}
+.social_btn li:nth-child(5) a:before {
+  background: #1ed1f0;
+}
 .logos {
   margin: 10px 0px 20px 0px;
 }
@@ -344,6 +436,17 @@ a {
 @media (max-width: 1013px) {
   .copy {
     top: 500px;
+  }
+}
+@media (max-width: 425px){
+  #footer{
+    padding: 90px 0px 0px 0px;
+  }
+  .temp{
+    margin-bottom: 5rem !important;
+  }
+  .social_btn {
+    top: 118%;
   }
 }
 
