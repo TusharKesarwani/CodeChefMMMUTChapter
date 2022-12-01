@@ -62,24 +62,6 @@ hr {
   border-radius: 10px;
 }
 
-.navbar {
-  background-color: #010F1A;
-  font-size: 18px;
-}
-
-.nav-item > a {
-  color: #fff !important;
-}
-
-.nav-item > a:hover {
-  color:#1579D6 !important;
-}
-
-.nav-item > .active {
-  background-color: rgba(255, 255, 255, 0.132);
-  border-radius: 4px;
-}
-
 /* Start of Header */
 
 #animated_background {
