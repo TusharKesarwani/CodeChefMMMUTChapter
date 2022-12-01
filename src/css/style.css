@@ -440,7 +440,7 @@ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75
 }
 @media (max-width: 425px){
   #footer{
-    padding: 90px 0px 0px 0px;
+    padding: 60px 0px 0px 0px;
   }
   .temp{
     margin-bottom: 5rem !important;
