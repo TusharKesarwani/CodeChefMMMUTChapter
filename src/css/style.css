@@ -57,7 +57,7 @@ a {
 
 hr {
   /* width:40vh; */
-  background-color: #fff;
+  background-color: #1579D6 !important;
   height: 4px !important;
   border-radius: 10px;
 }
@@ -149,18 +149,21 @@ hr {
 }
 
 .mission-body {
-  background-color: #010f1a !important;
+  /* background-color: #010f1a !important; */
   border-top: none !important;
   border-bottom: none !important;
+  background-image: url("../../img/about-us.png");
+  min-height: 70vh;
+  background-position: center;
+  background-size: cover;
 }
 
 .opportunity-body {
   border-top: none !important;
   border-bottom: none !important;
-  background-image: url("../../img/bg.jpg");
+  background-image: url("../../img/opportunity.png");
   background-attachment: fixed;
   background-size: cover;
-  background-position: left;
   min-height: 70vh;
   background-position: center;
 }
