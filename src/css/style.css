@@ -368,13 +368,13 @@ hr {
   display: grid;
   justify-content: center;
   align-items: center;
-  padding: 60px 0px 60px 0px;
+  padding: 60px 0px 87px 0px;
 }
 
 .social_btn {
   display: flex;
   position: absolute;
-  top: 85%;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
