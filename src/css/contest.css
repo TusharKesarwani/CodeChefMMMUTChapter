@@ -1,6 +1,5 @@
 #root {
-  background-color: #1f2739;
-  background-color: #62cfcfc8;
+  background-color: #010F1A;
 }
 
 * {
@@ -22,16 +21,14 @@
 
 .mypanel {
   margin-top: 340px;
-  background-color: #1f2739;
-  background-color: #62cfcfc8;
+  background-color: #010F1A;
 }
 .work {
-  background-color: #1f2739;
-  background-color: #62cfcfc8;
+  background-color: #010F1A;
 }
 
 .blue {
-  color: #185875;
+  color: #1579D6;
 }
 
 .yellow {

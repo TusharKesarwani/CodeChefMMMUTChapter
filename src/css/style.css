@@ -126,12 +126,7 @@ hr {
     font-size: 30px;
   }
 }
-.logo_foot {
-  width: 80px;
-  height: 80px;
-  margin: 0 5px;
-  border-radius: 50%;
-}
+
 /* End of Header */
 
 /* Start of mission and opportunity section */
@@ -152,7 +147,6 @@ hr {
 }
 
 .mission-body {
-  /* background-color: #010f1a !important; */
   border-top: none !important;
   border-bottom: none !important;
   background-image: url("../../img/about-us.png");
@@ -169,11 +163,6 @@ hr {
   background-size: cover;
   min-height: 70vh;
   background-position: center;
-}
-
-#mission-content,
-#opportunity-content {
-  /* font-family: "Open Sans", sans-serif; */
 }
 
 #mission-title,
@@ -356,6 +345,14 @@ hr {
 
 .logo-footer2 {
   height: 500px;
+}
+
+.logo_foot {
+  width: 80px;
+  height: 80px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: transparent;
 }
 
 #footer {
