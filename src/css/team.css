@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Barlow",sans-serif;
 }
 
 /* Start of Our Team Section */
 
 .head {
   padding-top: 20vh;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Barlow",sans-serif;
 }
 
 #our-team {
@@ -70,7 +71,6 @@
 }
 
 .team .team-1 span {
-  font-style: italic;
   display: block;
   font-size: 13px;
   color: #fff;
