@@ -3,9 +3,6 @@
 font & reset css
 --------------------------------------------- 
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800;900&display=swap');
 /* 
 ---------------------------------------------
@@ -16,7 +13,7 @@ reset
 * {
   margin: 0px;
   padding: 0px;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   box-sizing: border-box;
 }
 
@@ -170,25 +167,24 @@ hr {
 
 #mission-content,
 #opportunity-content {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
 }
 
 #mission-title,
 #opportunity-title,
-#advisor-title {
-  font-weight: 500;
+#advisor-title,
+#past_events h1 {
+  font-weight: 500; 
 }
 
 .oppotext{
-  font-family: 'Lora', serif;
-  font-size: large;
+  font-size:larger;
 }
 
 #mission-point,
 #opportunity-point,
 #advisor-point {
   padding-left: 2%;
-  font-family: "Open Sans";
   font-weight: 500;
 }
 
@@ -199,10 +195,9 @@ hr {
     padding-left: 10px;
   }
   #mission-title,
-  #opportunity-title {
-    font-size: 60px;
-  }
-  #advisor-title {
+  #opportunity-title,
+  #advisor-title,
+  #past_events h1 {
     font-size: 60px;
   }
   #advisor-name {
@@ -213,7 +208,8 @@ hr {
 @media (max-width: 1012px) {
   #mission-title,
   #opportunity-title,
-  #advisor-title {
+  #advisor-title,
+  #past_events h1 {
     font-size: 40px;
   }
   #advisor-name {
@@ -224,7 +220,8 @@ hr {
 @media (max-width: 800px) {
   #mission-title,
   #opportunity-title,
-  #advisor-title {
+  #advisor-title,
+  #past_events h1 {
     font-size: 30px;
   }
 }
