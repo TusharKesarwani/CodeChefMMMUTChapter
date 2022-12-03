@@ -3,27 +3,24 @@
 font & reset css
 --------------------------------------------- 
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800;900&display=swap');
 /* 
 ---------------------------------------------
 reset
 --------------------------------------------- 
 */
 
-
 * {
   margin: 0px;
   padding: 0px;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   box-sizing: border-box;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 400;
-  /* background-color: #fff; */
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -35,21 +32,55 @@ body {
   height: 100vh;
   width: 100%;
   position: fixed;
-  background: #FFFCF4 url(/img/Loading_icon.gif) no-repeat center;
-  z-index: 9999999;
+  background: #fffcf4 url(../../img/Loading_icon.gif) no-repeat center;
+  z-index: 9999;
 }
 
 .logo {
   background-color: transparent;
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  border-radius: 50%;
 }
 
 a {
   text-decoration: none;
-  /* color: white; */
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+hr {
+  /* width:40vh; */
+  background-color: #1579D6 !important;
+  height: 4px !important;
+  border-radius: 10px;
+}
+
+.navbar {
+  background-color: #010F1A;
+  font-size: 18px;
+}
+
+.nav-item > a {
+  color: #fff !important;
+}
+
+.nav-item > a:hover {
+  color:#1579D6 !important;
+}
+
+.nav-item > .active {
+  background-color: rgba(255, 255, 255, 0.132);
+  border-radius: 4px;
+}
+
+@media (max-width: 992px) {
+  .nav-item > a {
+    padding-left: 10px !important;
+  }
 }
 
 /* Start of Header */
@@ -61,49 +92,149 @@ a {
 }
 
 #intro1 {
-  font-size: 40px;
-  font-weight: bold;
+  font-family: "Barlow",sans-serif;
+  font-size: 24px;
+  font-weight: semi-bold;
   padding-top: 40vh;
-  background: linear-gradient(
-    90deg,
-    purple,
-    #fff,
-    #ff00f3,
-    #0033ff,
-    #ff00c4,
-    purple
-  );
-  background-size: 400%;
-  letter-spacing: 2px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  animation: animate 15s linear infinite;
+  color: #fff;
 }
 
-@keyframes animate {
-  0% {
-    background-position: 0%;
-  }
-
-  100% {
-    background-position: 400%;
-  }
-}
-
-#intro2 {
-  font-size: 18px;
-  font-weight: bold;
+.intro2 {
+  font-family: "Barlow",sans-serif;
+  font-size: 80px;
   margin-top: 1vh;
+  color:#fff;
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
-  margin: 0 5px;
-  border-radius: 50%;
+@media (max-width:991px) {
+  .intro2 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width:769px) {
+    #intro1 {
+      font-size: 18px;
+    }
+    .intro2 {
+      font-size: 40px;
+    }
+}
+
+@media (max-width:317px) {
+  .intro2 {
+    font-size: 30px;
+  }
 }
 
 /* End of Header */
+
+/* Start of mission and opportunity section */
+
+#mission, #opportunities {
+  background-color: #010f1a !important;
+}
+
+#mission-text {
+  display: grid;
+  align-items: center;
+}
+
+#mission-logo,
+#opportunity-logo {
+  width: 80%;
+  height: auto;
+}
+
+.mission-body {
+  border-top: none !important;
+  border-bottom: none !important;
+  background-image: url("../../img/about-us.png");
+  min-height: 70vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.opportunity-body {
+  border-top: none !important;
+  border-bottom: none !important;
+  background-image: url("../../img/opportunity.png");
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 70vh;
+  background-position: center;
+}
+
+#mission-title,
+#opportunity-title,
+#advisor-title,
+#past_events h1 {
+  font-weight: 500; 
+}
+
+.oppotext{
+  font-size:larger;
+}
+
+#mission-point,
+#opportunity-point,
+#advisor-point {
+  padding-left: 2%;
+  font-weight: 500;
+}
+
+@media (min-width: 1013px) {
+  #mission-point,
+  #opportunity-point,
+  #advisor-point {
+    padding-left: 10px;
+  }
+  #mission-title,
+  #opportunity-title,
+  #advisor-title,
+  #past_events h1 {
+    font-size: 60px;
+  }
+  #advisor-name {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1012px) {
+  #mission-title,
+  #opportunity-title,
+  #advisor-title,
+  #past_events h1 {
+    font-size: 40px;
+  }
+  #advisor-name {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  #mission-title,
+  #opportunity-title,
+  #advisor-title,
+  #past_events h1 {
+    font-size: 30px;
+  }
+}
+
+#mission-point > div,
+#opportunity-point > div,
+#advisor-point > div {
+  padding: 10px;
+}
+
+.opportunity-icon,
+.mission-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* End of Mission and opportunity section */
 
 /* Start of Go Top button */
 
@@ -132,7 +263,6 @@ a {
   text-decoration: none;
 }
 
-
 .btn-to-top {
   z-index: 1000;
   text-align: center;
@@ -145,7 +275,6 @@ a {
   background-color: #35dada;
   border: none;
 }
-
 
 /* End of Go Top button */
 
@@ -165,6 +294,45 @@ a {
   padding: 0px;
 }
 
+.card1 {
+  width: 260px;
+  height: 350px;
+}
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+.card1.blue {
+  background-image: linear-gradient(180deg, #2a2a72, #009ffb 100%);
+}
+.big-banner {
+  background-color: #010f1a;
+  background-size: cover;
+}
+
 /* End of Card Section */
 
 /* Start of Footer */
@@ -179,19 +347,107 @@ a {
   height: 500px;
 }
 
+.logo_foot {
+  width: 80px;
+  height: 80px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: transparent;
+}
+
 #footer {
   position: relative;
   min-height: 15vh;
   width: 100%;
-  background-color: white;
-  color: rgb(10, 9, 9);
+  background-image: url(../../img/bg_footer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
   font-size: 90%;
   display: grid;
   justify-content: center;
   align-items: center;
-  padding: 40px 0px 0px 0px;
+  padding: 60px 0px 87px 0px;
 }
 
+.social_btn {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social_btn li {
+  list-style: none;
+}
+
+.social_btn li a {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+.social_btn li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.social_btn li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.social_btn li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.social_btn li a:hover:before {
+  top: 0;
+}
+
+.social_btn li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+.social_btn li:nth-child(2) a:before{
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.social_btn li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.social_btn li:nth-child(4) a:before {
+  background: #c2230e;
+}
+.social_btn li:nth-child(5) a:before {
+  background: #1ed1f0;
+}
 .logos {
   margin: 10px 0px 20px 0px;
 }
@@ -204,13 +460,24 @@ a {
   width: 100%;
   position: absolute;
   top: 350px;
-  background-color: #62cfcfc8;
+  background-color: #010f1a;
   padding: 20px 0px 20px 0px;
 }
 
 @media (max-width: 1013px) {
   .copy {
     top: 500px;
+  }
+}
+@media (max-width: 425px){
+  #footer{
+    padding: 60px 0px 0px 0px;
+  }
+  .temp{
+    margin-bottom: 5rem !important;
+  }
+  .social_btn {
+    top: 110%;
   }
 }
 
