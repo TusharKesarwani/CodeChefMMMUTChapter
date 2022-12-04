@@ -64,7 +64,7 @@
   display: block;
   width: 50px;
   height: 1px;
-  background: #1579D6;
+  background: #1579d6;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -96,7 +96,7 @@
 
 .team-info {
   border-radius: 4px;
-  box-shadow: 2px 1px 10px #1579D6;
+  box-shadow: 2px 1px 10px #1579d6;
 }
 
 .team-1 {
@@ -114,7 +114,7 @@
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background-color: #010F1A;
+  background-color: #010f1a;
   z-index: -1;
 }
 

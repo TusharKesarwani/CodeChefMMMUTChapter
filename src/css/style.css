@@ -3,7 +3,7 @@
 font & reset css
 --------------------------------------------- 
 */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800;900&display=swap");
 /* 
 ---------------------------------------------
 reset
@@ -54,13 +54,13 @@ a {
 
 hr {
   /* width:40vh; */
-  background-color: #1579D6 !important;
+  background-color: #1579d6 !important;
   height: 4px !important;
   border-radius: 10px;
 }
 
 .navbar {
-  background-color: #010F1A;
+  background-color: #010f1a;
   font-size: 18px;
 }
 
@@ -69,7 +69,7 @@ hr {
 }
 
 .nav-item > a:hover {
-  color:#1579D6 !important;
+  color: #1579d6 !important;
 }
 
 .nav-item > .active {
@@ -92,7 +92,7 @@ hr {
 }
 
 #intro1 {
-  font-family: "Barlow",sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 24px;
   font-weight: semi-bold;
   padding-top: 40vh;
@@ -100,28 +100,28 @@ hr {
 }
 
 .intro2 {
-  font-family: "Barlow",sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 80px;
   margin-top: 1vh;
-  color:#fff;
+  color: #fff;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .intro2 {
     font-size: 60px;
   }
 }
 
-@media (max-width:769px) {
-    #intro1 {
-      font-size: 18px;
-    }
-    .intro2 {
-      font-size: 40px;
-    }
+@media (max-width: 769px) {
+  #intro1 {
+    font-size: 18px;
+  }
+  .intro2 {
+    font-size: 40px;
+  }
 }
 
-@media (max-width:317px) {
+@media (max-width: 317px) {
   .intro2 {
     font-size: 30px;
   }
@@ -131,7 +131,8 @@ hr {
 
 /* Start of mission and opportunity section */
 
-#mission, #opportunities {
+#mission,
+#opportunities {
   background-color: #010f1a !important;
 }
 
@@ -169,11 +170,11 @@ hr {
 #opportunity-title,
 #advisor-title,
 #past_events h1 {
-  font-weight: 500; 
+  font-weight: 500;
 }
 
-.oppotext{
-  font-size:larger;
+.oppotext {
+  font-size: larger;
 }
 
 #mission-point,
@@ -391,25 +392,25 @@ hr {
 }
 
 .social_btn li a {
-    width: 45px;
-    height: 45px;
-    background-color: #fff;
-    text-align: center;
-    line-height: 40px;
-    font-size: 25px;
-    margin: 0 10px;
-    display: block;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    border: 3px solid #fff;
-    z-index: 1;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
 }
 
 .social_btn li a .icon {
   position: relative;
   color: #262626;
-  transition: .5s;
+  transition: 0.5s;
   z-index: 3;
 }
 
@@ -426,7 +427,7 @@ hr {
   width: 100%;
   height: 100%;
   background: #f00;
-  transition: .5s;
+  transition: 0.5s;
   z-index: 2;
 }
 
@@ -434,15 +435,36 @@ hr {
   top: 0;
 }
 
-.social_btn li:nth-child(1) a:before{
+.social_btn li:nth-child(1) a:before {
   background: #3b5999;
 }
 
-.social_btn li:nth-child(2) a:before{
-  background: #f09433; 
-background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+.social_btn li:nth-child(2) a:before {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
 }
 
 .social_btn li:nth-child(3) a:before {
@@ -476,11 +498,11 @@ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75
     top: 500px;
   }
 }
-@media (max-width: 425px){
-  #footer{
+@media (max-width: 425px) {
+  #footer {
     padding: 60px 0px 0px 0px;
   }
-  .temp{
+  .temp {
     margin-bottom: 5rem !important;
   }
   .social_btn {

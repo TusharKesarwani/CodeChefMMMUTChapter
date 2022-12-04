@@ -4,7 +4,7 @@ const https = require("https");
 
 const app = express();
 //ejs
-app.set('view engine','ejs');
+app.set("view engine", "ejs");
 
 //body parser
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -43,11 +43,10 @@ const userschema = new mongoose.Schema({
     type: String,
     default: "-",
   },
-  Password:{
-    type:String,
+  Password: {
+    type: String,
     default: "-",
   },
-  
 });
 //creating a model
 const usermodel = mongoose.model("user", userschema);
@@ -69,8 +68,6 @@ app.get("/2020071016Add", function (req, res) {
   res.sendFile(__dirname + "/Html/Add.html");
 });
 
-
-
 //catching the functionality of data
 app.post("/", async function (req, res) {
   const Key = req.body.key;
@@ -80,12 +77,10 @@ app.post("/", async function (req, res) {
     // returns null if no record found.
   }
   //  var p=[{'name':'amit'},{'name':'akshat'}];
-  if (check)  
-  {
+  if (check) {
     //render ejs file
-    res.render("form", {users: check });
-  }
-  else res.send("<h1>Not found in Database</h1>");
+    res.render("form", { users: check });
+  } else res.send("<h1>Not found in Database</h1>");
 });
 
 //add functionality
@@ -95,31 +90,28 @@ app.post("/2020071016Add", async function (req, res) {
     Year = req.body.year,
     Role = req.body.role,
     Message = req.body.message,
-    Password=req.body.Password;
+    Password = req.body.Password;
 
-    
-    const user = new usermodel({
-      rollno: Rollno,
-      name: Name,
-      batch: Year,
-      role: Role,
-      message: Message,
-    });
+  const user = new usermodel({
+    rollno: Rollno,
+    name: Name,
+    batch: Year,
+    role: Role,
+    message: Message,
+  });
   let IDPresent = await usermodel.findOne({ rollno: Rollno });
-  let AdminId=await usermodel.findOne({_id :"637cc4ba0b50ed4c851b9612"});
-
+  let AdminId = await usermodel.findOne({ _id: "637cc4ba0b50ed4c851b9612" });
 
   // check if password match with id and unique roll number length is 10 or not and if same roll number exist then redirect
-  if( AdminId.Password!=Password || IDPresent || Rollno.length!=10) {
+  if (AdminId.Password != Password || IDPresent || Rollno.length != 10) {
     console.log("directed to Add");
-    res.redirect('/2020071016Add');
-  }
-  else {
+    res.redirect("/2020071016Add");
+  } else {
     await user.save();
-    let resDB =await usermodel.findOne({ rollno: Rollno });
-      let id =resDB._id;
-      // console.log(id);
-      res.send(id);
+    let resDB = await usermodel.findOne({ rollno: Rollno });
+    let id = resDB._id;
+    // console.log(id);
+    res.send(id);
   }
   res.send();
 });
