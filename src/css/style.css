@@ -13,7 +13,7 @@ reset
 * {
   margin: 0px;
   padding: 0px;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
@@ -22,10 +22,11 @@ body {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 #load {
@@ -46,10 +47,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 hr {
