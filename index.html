@@ -14,11 +14,8 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!--Main CSS-->
   <link rel="stylesheet" href="src/css/style.css">
-  <link rel="stylesheet" href="src/css/waves.css">
   <!--fontawesome-->
   <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
-  <!--google Fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <!--Animate.css--->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -68,11 +65,6 @@
       </div>
     </div>
   </nav>
-
-  <a href="#" id="go-top" class="go-top">
-    <i class="fa fa-arrow-up fa-fw"></i>
-  </a>
-
 
   <header id="animated_background">
     <div class="container animate__animated animate__zoomInDown">
@@ -126,7 +118,7 @@
         <div class="col-md-6 pt-5" id="opportunity-text">
           <div class="card-body">
             <h5 class="card-title text-center" id="opportunity-title">Opportunities</h5>
-            <hr style="margin-left:100px;margin-right:100px; background-color:#4A4A4A;">
+            <hr style="margin-left:100px;margin-right:100px;">
             <div class="card-text" id="opportunity-point">
               <div class="d-flex">
                 <div><img src="img/opportunity-1.png" class="rounded-start opportunity-icon" alt="icon"></div>
@@ -310,14 +302,10 @@
 
   <!-- footer ends here  -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-  <script src="src/js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/d6de929348.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   <script>
     var preloader = document.getElementById('load');
@@ -325,24 +313,14 @@
       preloader.style.display = 'none';
     }
   </script>
-
-  <!-- btn-to-top script start -->
-  <script>
-    const btn = document.querySelector('.btn-to-top');
-    btn.addEventListener("click", function () {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-      });
-    })
-  </script>
-  <!-- btn-to-top script ends-->
-
-  <script>
-    AOS.init();
-  </script>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script src="src/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/d6de929348.js" crossorigin="anonymous"></script>
 
 </body>
-
 </html>

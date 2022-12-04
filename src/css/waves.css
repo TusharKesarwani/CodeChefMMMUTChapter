@@ -11,13 +11,6 @@
   background-color: #62cfcfc8;
 }
 
-.content {
-  position: relative;
-  height: 50vh;
-  text-align: center;
-  background-color: white;
-}
-
 /* Animation */
 
 .parallax > use {

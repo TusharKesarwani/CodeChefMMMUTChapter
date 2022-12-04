@@ -251,7 +251,7 @@ hr {
   position: fixed;
   right: 20px;
   text-decoration: none;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .go-top:hover,
@@ -353,6 +353,13 @@ hr {
   margin: 0 5px;
   border-radius: 50%;
   background: transparent;
+}
+
+.content {
+  position: relative;
+  height: 50vh;
+  text-align: center;
+  background-color: white;
 }
 
 #footer {
