@@ -22,9 +22,8 @@ body {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   scroll-behavior: smooth;
-  overflow: visible;
 }
 
 ::-webkit-scrollbar {
@@ -52,7 +51,6 @@ a {
 }
 
 hr {
-  /* width:40vh; */
   background-color: #1579d6 !important;
   height: 4px !important;
   border-radius: 10px;
@@ -140,11 +138,11 @@ hr {
   align-items: center;
 }
 
-#mission-logo,
+/* #mission-logo,
 #opportunity-logo {
   width: 80%;
   height: auto;
-}
+} */
 
 .mission-body {
   border-top: none !important;
@@ -160,14 +158,13 @@ hr {
   border-bottom: none !important;
   background-image: url("../../img/opportunity.png");
   background-attachment: fixed;
-  background-size: cover;
+  /* background-size: cover; */
   min-height: 70vh;
   background-position: center;
 }
 
 #mission-title,
 #opportunity-title,
-#advisor-title,
 #past_events h1 {
   font-weight: 500;
 }
@@ -177,53 +174,41 @@ hr {
 }
 
 #mission-point,
-#opportunity-point,
-#advisor-point {
+#opportunity-point {
   padding-left: 2%;
   font-weight: 500;
 }
 
 @media (min-width: 1013px) {
   #mission-point,
-  #opportunity-point,
-  #advisor-point {
+  #opportunity-point {
     padding-left: 10px;
   }
   #mission-title,
   #opportunity-title,
-  #advisor-title,
   #past_events h1 {
     font-size: 60px;
-  }
-  #advisor-name {
-    font-size: 40px;
   }
 }
 
 @media (max-width: 1012px) {
   #mission-title,
   #opportunity-title,
-  #advisor-title,
   #past_events h1 {
     font-size: 40px;
-  }
-  #advisor-name {
-    font-size: 30px;
   }
 }
 
 @media (max-width: 800px) {
   #mission-title,
   #opportunity-title,
-  #advisor-title,
   #past_events h1 {
     font-size: 30px;
   }
 }
 
 #mission-point > div,
-#opportunity-point > div,
-#advisor-point > div {
+#opportunity-point > div {
   padding: 10px;
 }
 
