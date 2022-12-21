@@ -138,12 +138,6 @@ hr {
   align-items: center;
 }
 
-/* #mission-logo,
-#opportunity-logo {
-  width: 80%;
-  height: auto;
-} */
-
 .mission-body {
   border-top: none !important;
   border-bottom: none !important;
@@ -220,48 +214,6 @@ hr {
 }
 
 /* End of Mission and opportunity section */
-
-/* Start of Go Top button */
-
-.go-top {
-  background: none repeat scroll 0 0 padding-box #1099dd;
-  bottom: 20px;
-  border: 1px solid #1099dd;
-  border-radius: 4px;
-  color: #eee;
-  display: none;
-  font-size: 12px;
-  opacity: 0.8;
-  padding: 10px;
-  position: fixed;
-  right: 20px;
-  text-decoration: none;
-  z-index: 9999;
-}
-
-.go-top:hover,
-.go-top:focus,
-.go-top:active,
-.go-top:visited {
-  color: #fff;
-  outline: 0;
-  text-decoration: none;
-}
-
-.btn-to-top {
-  z-index: 1000;
-  text-align: center;
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  height: 50px;
-  width: 48px;
-  border-radius: 14px;
-  background-color: #35dada;
-  border: none;
-}
-
-/* End of Go Top button */
 
 /* Start of Card Section */
 
